@@ -9,6 +9,7 @@ import Http
 import Json.Decode as Decode exposing (Decoder)
 
 
+
 -- MAIN
 
 
@@ -20,6 +21,7 @@ main =
         , subscriptions = subscriptions
         , view = view
         }
+
 
 
 -- MODEL
@@ -69,6 +71,7 @@ init _ =
         , expect = Http.expectJson GotPackages packagesDecoder
         }
     )
+
 
 
 -- UPDATE
@@ -131,12 +134,14 @@ errorToString error =
             "Bad body: " ++ body
 
 
+
 -- SUBSCRIPTIONS
 
 
 subscriptions : Model -> Sub Msg
 subscriptions _ =
     Sub.none
+
 
 
 -- VIEW
@@ -171,7 +176,7 @@ viewLeftPanel model =
 
         Success ->
             div []
-                [ h2 [ class "mb-3" ] [ text "Packages" ]
+                [ h2 [ class "mb-3" ] [ text "Geospatial Nix packages" ]
                 , input
                     [ class "form-control form-control-lg mb-3"
                     , placeholder "Search packages by name or description..."
@@ -345,6 +350,7 @@ viewPackageDetails : String -> Package -> Html Msg
 viewPackageDetails name pkg =
     div []
         [ h2 [ class "mb-4" ] [ text name ]
+        , hr [] []
         , viewDetailSection "Version" pkg.version
         , viewDetailSection "Description" pkg.description
         , if String.isEmpty pkg.homepage then
@@ -369,20 +375,7 @@ viewPackageDetails name pkg =
               else
                 span [ class "badge bg-success" ] [ text "Available" ]
             ]
-        , if List.isEmpty pkg.platforms then
-            text ""
-
-          else
-            div [ class "mb-4" ]
-                [ h4 [] [ text "Platforms" ]
-                , p [ class "text-muted small" ]
-                    [ text (String.fromInt (List.length pkg.platforms) ++ " platforms supported") ]
-                , details []
-                    [ summary [ class "cursor-pointer text-warning" ] [ text "Show all platforms" ]
-                    , ul [ class "mt-2 small" ]
-                        (List.map (\platform -> li [] [ text platform ]) pkg.platforms)
-                    ]
-                ]
+        , hr [] []
         , div [ class "mt-5" ]
             [ h4 [] [ text "Install" ]
             , pre [ class "bg-secondary p-3 rounded" ]
@@ -401,6 +394,7 @@ viewDetailSection label content =
             [ h4 [] [ text label ]
             , p [] [ text content ]
             ]
+
 
 
 -- DECODERS
