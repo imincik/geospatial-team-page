@@ -1,0 +1,118 @@
+# List packages maintained by a person.
+
+# USAGE:
+# nix eval --json -f team-packages.nix packages
+
+
+{ pkgs ? import
+    (fetchTarball "https://github.com/NixOS/nixpkgs/archive/master.tar.gz")
+    { config.allowBroken = true; config.allowUnfree = true; }
+
+, maintainer ? "imincik"
+
+, showBroken ? true  # show broken packages
+}:
+
+let
+  inherit (pkgs.lib.debug) traceVal;
+  inherit (pkgs.lib)
+    attrValues
+    collect
+    elem
+    filterAttrsRecursive
+    flatten
+    isAttrs
+    isDerivation
+    listToAttrs
+    map
+    mapAttrs
+    ;
+
+  myMaintainer = pkgs.lib.maintainers.${maintainer};
+
+  isMaintainedBy = pkg:
+    elem
+      myMaintainer
+      (pkg.meta.maintainers or [ ] ++ (flatten (map (x: x.members or [ ]) (pkg.meta.teams or [ ]))));
+
+  isDerivationRobust = pkg:
+    let
+      result = builtins.tryEval (
+        isDerivation pkg
+      );
+    in
+    if result.success then
+      result.value
+    else false;
+
+  brokenFilter = pkg:
+    let
+      isBroken = pkg.meta.broken;
+    in
+    if showBroken then true
+    else if isBroken == false then
+      true
+    else false;
+
+  isPkgSet = pkg:
+    let
+      result = builtins.tryEval (
+        (isAttrs pkg) && (pkg.recurseForDerivations or false)
+      );
+    in
+    if result.success then
+      result.value
+    else false;
+
+  extractLicense = license:
+    if license == null then
+      ""
+    else if builtins.isString license then
+      license
+    else if builtins.isList license then
+      builtins.concatStringsSep ", " (map extractLicense license)
+    else if builtins.isAttrs license then
+      license.spdxId or license.shortName or license.fullName or ""
+    else
+      "";
+
+  extractMetadata = pkg:
+    let
+      meta = pkg.meta or {};
+    in
+    {
+      version = pkg.version or "unknown";
+      broken = meta.broken or false;
+      description = meta.description or "";
+      license = extractLicense (meta.license or null);
+      homepage = meta.homepage or "";
+      platforms = meta.platforms or [];
+    };
+
+  recursePackageSet = pkgSetName: pkgs:
+    mapAttrs
+      (name: pkg:
+        if isDerivationRobust pkg then
+          if isMaintainedBy pkg && brokenFilter pkg then
+            {
+              name = "${if pkgSetName != null then pkgSetName + "." + name else name}";
+              data = extractMetadata pkg;
+            }
+          else null
+        else if isPkgSet pkg then
+          recursePackageSet name pkg
+        else null
+      )
+      pkgs;
+
+  collectPackages = tree:
+    let
+      filtered = filterAttrsRecursive (n: v: v != null) tree;
+      pkgList = collect (x: x ? name && x ? data) filtered;
+    in
+    listToAttrs (map (pkg: { name = pkg.name; value = pkg.data; }) pkgList);
+
+in
+{
+  packages = collectPackages (recursePackageSet null pkgs);
+}
