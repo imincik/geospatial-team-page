@@ -3,20 +3,20 @@
 # USAGE:
 # nix eval --json -f team-packages.nix packages
 
+{
+  pkgs ? import (fetchTarball "https://github.com/NixOS/nixpkgs/archive/master.tar.gz") {
+    config.allowBroken = true;
+    config.allowUnfree = true;
+  },
 
-{ pkgs ? import
-    (fetchTarball "https://github.com/NixOS/nixpkgs/archive/master.tar.gz")
-    { config.allowBroken = true; config.allowUnfree = true; }
+  team ? "geospatial",
 
-, maintainer ? "imincik"
-
-, showBroken ? true  # show broken packages
+  showBroken ? true, # show broken packages
 }:
 
 let
   inherit (pkgs.lib.debug) traceVal;
   inherit (pkgs.lib)
-    attrValues
     collect
     elem
     filterAttrsRecursive
@@ -28,43 +28,42 @@ let
     mapAttrs
     ;
 
-  myMaintainer = pkgs.lib.maintainers.${maintainer};
+  myTeam = pkgs.lib.teams.${team};
 
-  isMaintainedBy = pkg:
-    elem
-      myMaintainer
-      (pkg.meta.maintainers or [ ] ++ (flatten (map (x: x.members or [ ]) (pkg.meta.teams or [ ]))));
+  isMaintainedBy =
+    pkg:
+    elem myTeam (
+      pkg.meta.teams or [ ] ++ (flatten (map (x: x.members or [ ]) (pkg.meta.teams or [ ])))
+    );
 
-  isDerivationRobust = pkg:
+  isDerivationRobust =
+    pkg:
     let
-      result = builtins.tryEval (
-        isDerivation pkg
-      );
+      result = builtins.tryEval (isDerivation pkg);
     in
-    if result.success then
-      result.value
-    else false;
+    if result.success then result.value else false;
 
-  brokenFilter = pkg:
+  brokenFilter =
+    pkg:
     let
       isBroken = pkg.meta.broken;
     in
-    if showBroken then true
+    if showBroken then
+      true
     else if isBroken == false then
       true
-    else false;
+    else
+      false;
 
-  isPkgSet = pkg:
+  isPkgSet =
+    pkg:
     let
-      result = builtins.tryEval (
-        (isAttrs pkg) && (pkg.recurseForDerivations or false)
-      );
+      result = builtins.tryEval ((isAttrs pkg) && (pkg.recurseForDerivations or false));
     in
-    if result.success then
-      result.value
-    else false;
+    if result.success then result.value else false;
 
-  extractLicense = license:
+  extractLicense =
+    license:
     if license == null then
       ""
     else if builtins.isString license then
@@ -76,9 +75,10 @@ let
     else
       "";
 
-  extractMetadata = pkg:
+  extractMetadata =
+    pkg:
     let
-      meta = pkg.meta or {};
+      meta = pkg.meta or { };
     in
     {
       version = pkg.version or "unknown";
@@ -86,31 +86,39 @@ let
       description = meta.description or "";
       license = extractLicense (meta.license or null);
       homepage = meta.homepage or "";
-      platforms = meta.platforms or [];
+      platforms = meta.platforms or [ ];
     };
 
-  recursePackageSet = pkgSetName: pkgs:
-    mapAttrs
-      (name: pkg:
-        if isDerivationRobust pkg then
-          if isMaintainedBy pkg && brokenFilter pkg then
-            {
-              name = "${if pkgSetName != null then pkgSetName + "." + name else name}";
-              data = extractMetadata pkg;
-            }
-          else null
-        else if isPkgSet pkg then
-          recursePackageSet name pkg
-        else null
-      )
-      pkgs;
+  recursePackageSet =
+    pkgSetName: pkgs:
+    mapAttrs (
+      name: pkg:
+      if isDerivationRobust pkg then
+        if isMaintainedBy pkg && brokenFilter pkg then
+          {
+            name = "${if pkgSetName != null then pkgSetName + "." + name else name}";
+            data = extractMetadata pkg;
+          }
+        else
+          null
+      else if isPkgSet pkg then
+        recursePackageSet name pkg
+      else
+        null
+    ) pkgs;
 
-  collectPackages = tree:
+  collectPackages =
+    tree:
     let
       filtered = filterAttrsRecursive (n: v: v != null) tree;
       pkgList = collect (x: x ? name && x ? data) filtered;
     in
-    listToAttrs (map (pkg: { name = pkg.name; value = pkg.data; }) pkgList);
+    listToAttrs (
+      map (pkg: {
+        name = pkg.name;
+        value = pkg.data;
+      }) pkgList
+    );
 
 in
 {
