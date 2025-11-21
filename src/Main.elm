@@ -3,7 +3,7 @@ module Main exposing (main)
 import Browser
 import Dict exposing (Dict)
 import Html exposing (..)
-import Html.Attributes exposing (..)
+import Html.Attributes exposing (attribute, class, href, placeholder, target, value)
 import Html.Events exposing (onClick, onInput)
 import Http
 import Json.Decode as Decode exposing (Decoder)
@@ -29,8 +29,15 @@ type alias Model =
     { packages : Dict String Package
     , searchString : String
     , selectedPackage : Maybe String
+    , selectedFilter : PackageFilter
     , status : Status
     }
+
+
+type PackageFilter
+    = All
+    | Python
+    | Postgresql
 
 
 type Status
@@ -54,6 +61,7 @@ init _ =
     ( { packages = Dict.empty
       , searchString = ""
       , selectedPackage = Nothing
+      , selectedFilter = All
       , status = Loading
       }
     , Http.get
@@ -70,6 +78,7 @@ type Msg
     = GotPackages (Result Http.Error (Dict String Package))
     | Search String
     | SelectPackage String
+    | SelectFilter PackageFilter
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -94,6 +103,11 @@ update msg model =
 
         SelectPackage name ->
             ( { model | selectedPackage = Just name }
+            , Cmd.none
+            )
+
+        SelectFilter filter ->
+            ( { model | selectedFilter = filter }
             , Cmd.none
             )
 
@@ -165,15 +179,44 @@ viewLeftPanel model =
                     , onInput Search
                     ]
                     []
+                , viewFilterButtons model.selectedFilter
                 , viewPackagesList model
                 ]
+
+
+viewFilterButtons : PackageFilter -> Html Msg
+viewFilterButtons selectedFilter =
+    div [ class "mb-3" ]
+        [ viewFilterButton selectedFilter All "All"
+        , text " "
+        , viewFilterButton selectedFilter Python "Python"
+        , text " "
+        , viewFilterButton selectedFilter Postgresql "PostgreSQL"
+        ]
+
+
+viewFilterButton : PackageFilter -> PackageFilter -> String -> Html Msg
+viewFilterButton selectedFilter filter label =
+    let
+        buttonClass =
+            if selectedFilter == filter then
+                "btn btn-dark"
+
+            else
+                "btn btn-secondary"
+    in
+    button
+        [ class buttonClass
+        , onClick (SelectFilter filter)
+        ]
+        [ text label ]
 
 
 viewPackagesList : Model -> Html Msg
 viewPackagesList model =
     let
         filteredPackages =
-            filterPackages model.searchString model.packages
+            filterPackages model.selectedFilter model.searchString model.packages
 
         packageCount =
             List.length filteredPackages
@@ -186,17 +229,30 @@ viewPackagesList model =
         ]
 
 
-filterPackages : String -> Dict String Package -> List ( String, Package )
-filterPackages searchString packages =
+filterPackages : PackageFilter -> String -> Dict String Package -> List ( String, Package )
+filterPackages packageFilter searchString packages =
     let
         lowerSearch =
             String.toLower searchString
+
+        matchesFilter name =
+            case packageFilter of
+                All ->
+                    True
+
+                Python ->
+                    String.startsWith "python" name
+
+                Postgresql ->
+                    String.startsWith "postgresql" name
     in
     Dict.toList packages
         |> List.filter
             (\( name, pkg ) ->
-                String.contains lowerSearch (String.toLower name)
-                    || String.contains lowerSearch (String.toLower pkg.description)
+                matchesFilter name
+                    && (String.contains lowerSearch (String.toLower name)
+                            || String.contains lowerSearch (String.toLower pkg.description)
+                       )
             )
         |> List.sortBy Tuple.first
 
