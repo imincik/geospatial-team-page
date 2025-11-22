@@ -55,6 +55,7 @@ type alias Package =
     , homepage : String
     , license : String
     , platforms : List String
+    , category : String
     }
 
 
@@ -240,21 +241,21 @@ filterPackages packageFilter searchString packages =
         lowerSearch =
             String.toLower searchString
 
-        matchesFilter name =
+        matchesFilter pkg =
             case packageFilter of
                 All ->
                     True
 
                 Python ->
-                    String.startsWith "python" name
+                    pkg.category == "python"
 
                 Postgresql ->
-                    String.startsWith "postgresql" name
+                    pkg.category == "postgresql"
     in
     Dict.toList packages
         |> List.filter
             (\( name, pkg ) ->
-                matchesFilter name
+                matchesFilter pkg
                     && (String.contains lowerSearch (String.toLower name)
                             || String.contains lowerSearch (String.toLower pkg.description)
                        )
@@ -400,17 +401,41 @@ viewDetailSection label content =
 -- DECODERS
 
 
+deriveCategoryFromName : String -> String
+deriveCategoryFromName name =
+    if String.startsWith "python" name then
+        "python"
+
+    else if String.startsWith "postgresql" name then
+        "postgresql"
+
+    else
+        "programs"
+
+
 packagesDecoder : Decoder (Dict String Package)
 packagesDecoder =
-    Decode.dict packageDecoder
+    Decode.keyValuePairs packageDataDecoder
+        |> Decode.map
+            (\pairs ->
+                List.map
+                    (\( name, pkgData ) ->
+                        ( name
+                        , { pkgData | category = deriveCategoryFromName name }
+                        )
+                    )
+                    pairs
+                    |> Dict.fromList
+            )
 
 
-packageDecoder : Decoder Package
-packageDecoder =
-    Decode.map6 Package
+packageDataDecoder : Decoder Package
+packageDataDecoder =
+    Decode.map7 Package
         (Decode.field "version" Decode.string)
         (Decode.field "broken" Decode.bool)
         (Decode.field "description" Decode.string)
         (Decode.field "homepage" Decode.string)
         (Decode.field "license" Decode.string)
         (Decode.field "platforms" (Decode.list Decode.string))
+        (Decode.succeed "")
