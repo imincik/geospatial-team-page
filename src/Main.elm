@@ -464,6 +464,18 @@ viewPackageDetails name pkg =
                 ]
             , hr [] []
             ]
+        , div []
+            [ h4 [] [ text "Update log" ]
+            , p []
+                [ a
+                    [ href ("https://nixpkgs-update-logs.nix-community.org/" ++ name ++ "/")
+                    , target "_blank"
+                    , class "text-warning"
+                    ]
+                    [ text ("https://nixpkgs-update-logs.nix-community.org/" ++ name ++ "/") ]
+                ]
+            , hr [] []
+            ]
 
         -- , div []
         --     [ h3 [] [ text "USAGE" ]
