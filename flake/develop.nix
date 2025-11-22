@@ -27,7 +27,7 @@
             echo "  nix eval --json -f team-packages.nix packages > src/packages.json"
             echo
             echo "Launch live server:"
-            echo "  live-server --host=127.0.0.1 --open=/index.html src/ & echo \$! > live-server.pid"
+            echo "  live-server --host=127.0.0.1 --open=index.html src/ & echo \$! > live-server.pid"
             echo
             echo "Re-build main app on change:"
             echo "  find src/ -name "*.elm" | entr -rn elm make src/Main.elm --output=src/main.js"
