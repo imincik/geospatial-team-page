@@ -418,13 +418,13 @@ viewPackageDetails name pkg =
                   else
                     span [ class "badge bg-success" ] [ text "Available" ]
                 ]
-            , hr [] []
+            -- , hr [] []
             ]
-        , div []
-            [ h3 [] [ text "USAGE" ]
-            , pre [ class "bg-secondary p-3 rounded" ]
-                [ code [] [ text ("TODO: " ++ name) ] ]
-            ]
+        -- , div []
+        --     [ h3 [] [ text "USAGE" ]
+        --     , pre [ class "bg-secondary p-3 rounded" ]
+        --         [ code [] [ text ("TODO: " ++ name) ] ]
+        --     ]
         ]
 
 
