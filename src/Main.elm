@@ -313,36 +313,27 @@ viewRightPanel model =
                     viewInstructions
 
 
+installNixCmd : String
+installNixCmd =
+    """curl --proto '=https' --tlsv1.2 -sSf \\
+    -L https://install.determinate.systems/nix \\
+    | sh -s -- install
+"""
+
+
 viewInstructions : Html Msg
 viewInstructions =
     div []
-        [ h2 [ class "mb-4" ] [ text "Quick Start" ]
+        [ h2 [ class "mb-4" ] [ text "QUICK START" ]
         , div [ class "mb-4" ]
-            [ h4 [] [ text "Browse Packages" ]
-            , p [] [ text "Use the search box on the left to find packages by name or description. Click on any package to view its details here." ]
-            ]
-        , div [ class "mb-4" ]
-            [ h4 [] [ text "Install a Package" ]
-            , p [] [ text "To install a package with Nix, use:" ]
-            , pre [ class "bg-secondary p-3 rounded" ]
-                [ code [] [ text "nix-env -iA nixpkgs.<package-name>" ] ]
-            ]
-        , div [ class "mb-4" ]
-            [ h4 [] [ text "Add to NixOS Configuration" ]
-            , p [] [ text "Add packages to your NixOS configuration:" ]
-            , pre [ class "bg-secondary p-3 rounded" ]
-                [ code []
-                    [ text "environment.systemPackages = with pkgs; [\n"
-                    , text "  <package-name>\n"
-                    , text "];"
-                    ]
+            [ p []
+                [ text "Install Nix "
+                , a [ href "https://zero-to-nix.com/start/install", target "_blank" ]
+                    [ text "(learn more about this installer)." ]
+                , pre [ class "bg-secondary p-3 rounded" ]
+                    [ code [] [ text installNixCmd ] ]
                 ]
-            ]
-        , div [ class "mb-4" ]
-            [ h4 [] [ text "Use in Nix Shell" ]
-            , p [] [ text "Try a package without installing:" ]
-            , pre [ class "bg-secondary p-3 rounded" ]
-                [ code [] [ text "nix-shell -p <package-name>" ] ]
+            , p [] [ text "and use the search box on the left to find packages by name or description. Click on any package to view its details here." ]
             ]
         ]
 
