@@ -371,28 +371,10 @@ viewRightPanel model =
                     viewInstructions
 
 
-installNixCmd : String
-installNixCmd =
-    """curl --proto '=https' --tlsv1.2 -sSf \\
-    -L https://install.determinate.systems/nix \\
-    | sh -s -- install
-"""
-
-
 viewInstructions : Html Msg
 viewInstructions =
     div []
-        [ -- h2 [ class "mb-4" ] [ text "QUICK START" ]
-          -- , div [ class "mb-4" ]
-          --     [ p []
-          --         [ text "Install Nix "
-          --         , a [ href "https://zero-to-nix.com/start/install", target "_blank" ]
-          --             [ text "(learn more about this installer)." ]
-          --         , pre [ class "bg-secondary p-3 rounded" ]
-          --             [ code [] [ text installNixCmd ] ]
-          --         ]
-          --     , p [] [ text "and use the search box on the left to find packages by name or description. Click on package to see more details and usage instructions." ]
-          div [ class "mb-4" ]
+        [ div [ class "mb-4" ]
             [ p [] [ text "Search for packages by name or description. Click on package to see more details." ]
             , hr [] []
             , p []
