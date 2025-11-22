@@ -395,7 +395,7 @@ viewInstructions =
 viewPackageDetails : String -> Package -> Html Msg
 viewPackageDetails name pkg =
     div []
-        [ h2 [ class "mb-4" ] [ text (name ++ " v" ++ pkg.version) ]
+        [ h2 [ class "mb-4" ] [ text (name ++ " - v" ++ pkg.version) ]
         , hr [] []
         , viewDetailSection "Description" pkg.description
         , if String.isEmpty pkg.homepage then
@@ -424,8 +424,47 @@ viewPackageDetails name pkg =
                   else
                     span [ class "badge bg-success" ] [ text "Available" ]
                 ]
-            -- , hr [] []
+            , hr [] []
             ]
+        , div []
+            [ h4 [] [ text "Hydra build" ]
+            , ul []
+                [ li []
+                    [ a
+                        [ href ("https://hydra.nixos.org/job/nixpkgs/trunk/" ++ name ++ ".x86_64-linux")
+                        , target "_blank"
+                        , class "text-warning"
+                        ]
+                        [ text "x86_64-linux" ]
+                    ]
+                , li []
+                    [ a
+                        [ href ("https://hydra.nixos.org/job/nixpkgs/trunk/" ++ name ++ ".aarch64-linux")
+                        , target "_blank"
+                        , class "text-warning"
+                        ]
+                        [ text "aarch64-linux" ]
+                    ]
+                , li []
+                    [ a
+                        [ href ("https://hydra.nixos.org/job/nixpkgs/trunk/" ++ name ++ ".x86_64-darwin")
+                        , target "_blank"
+                        , class "text-warning"
+                        ]
+                        [ text "x86_64-darwin" ]
+                    ]
+                , li []
+                    [ a
+                        [ href ("https://hydra.nixos.org/job/nixpkgs/trunk/" ++ name ++ ".aarch64-darwin")
+                        , target "_blank"
+                        , class "text-warning"
+                        ]
+                        [ text "aarch64-darwin" ]
+                    ]
+                ]
+            , hr [] []
+            ]
+
         -- , div []
         --     [ h3 [] [ text "USAGE" ]
         --     , pre [ class "bg-secondary p-3 rounded" ]
