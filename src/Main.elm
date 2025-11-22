@@ -397,8 +397,13 @@ viewInstructions =
             , hr [] []
             , p []
                 [ text "This website is NOT an official Geospatial Team project. It was made by "
-                , a [ href "https://github.com/imincik", target "_blank" ] [ text "Ivan Mincik (@imincik)" ]
-                , text ", a member of the Geospatial Team."
+                , a
+                    [ href "https://github.com/imincik", target "_blank" ]
+                    [ text "Ivan Mincik (@imincik), " ]
+                , text "a member of the Geospatial Team. Report issues or submit PRs in "
+                , a
+                    [ href "https://github.com/imincik/geospatial-nix-page", target "_blank" ]
+                    [ text "https://github.com/imincik/geospatial-nix-page ." ]
                 ]
             ]
         ]
