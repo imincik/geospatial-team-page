@@ -49,7 +49,7 @@
         }:
         {
           packages = {
-            ui = pkgs.callPackage ./package.nix { };
+            web = pkgs.callPackage ./package.nix { };
           };
         };
 

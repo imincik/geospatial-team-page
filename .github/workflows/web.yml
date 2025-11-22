@@ -42,7 +42,7 @@ jobs:
 
       # FIXME: avoid building with disabled sandbox
       - name: Build UI
-        run: nix build .#ui --accept-flake-config --option sandbox relaxed
+        run: nix build .#web--accept-flake-config --option sandbox relaxed
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
