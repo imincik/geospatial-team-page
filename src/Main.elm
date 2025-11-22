@@ -152,11 +152,34 @@ view : Model -> Html Msg
 view model =
     div [ class "container-fluid" ]
         [ div [ class "row" ]
+            [ div [ class "col-lg-12 py-3" ]
+                [ viewMenuPanel ]
+            ]
+        , div [ class "row" ]
             [ div [ class "col-lg-6 border bg-light py-3 vh-100 overflow-auto" ]
                 [ viewLeftPanel model ]
             , div [ class "col-lg-6 bg-dark text-white py-3 vh-100 overflow-auto" ]
                 [ viewRightPanel model ]
             ]
+        ]
+
+
+viewMenuPanel : Html Msg
+viewMenuPanel =
+    div [ class "d-flex align-items-center" ]
+        [ h1 [ class "me-4 mb-0 fw-bold" ] [ text "GEOSPATIAL NIX" ]
+        , a
+            [ href "https://nixos.org/community/teams/geospatial/"
+            , target "_blank"
+            , class "btn btn-outline-dark me-2"
+            ]
+            [ text "Team page" ]
+        , a
+            [ href "https://github.com/orgs/NixOS/projects/47"
+            , target "_blank"
+            , class "btn btn-outline-dark"
+            ]
+            [ text "Project board" ]
         ]
 
 
@@ -177,8 +200,7 @@ viewLeftPanel model =
 
         Success ->
             div []
-                [ h2 [ class "mb-3" ] [ text "Geospatial Nix packages" ]
-                , input
+                [ input
                     [ class "form-control form-control-lg mb-3"
                     , placeholder "Search packages by name or description..."
                     , value model.searchString
