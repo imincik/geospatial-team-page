@@ -173,7 +173,7 @@ viewMenuPanel =
             , target "_blank"
             , class "btn btn-outline-dark me-2"
             ]
-            [ text "Team Page" ]
+            [ text "Geospatial Team" ]
         , a
             [ href "https://github.com/orgs/NixOS/projects/47"
             , target "_blank"
