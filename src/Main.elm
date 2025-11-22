@@ -287,7 +287,7 @@ viewPackageItem selectedPackage ( name, pkg ) =
         ]
         [ div [ class "d-flex w-100 justify-content-between" ]
             [ h5 [ class "mb-1" ] [ text name ]
-            , small [] [ text pkg.version ]
+            , small [] [ text ("v" ++ pkg.version) ]
             ]
         , p [ class "mb-1 text-truncate" ] [ text pkg.description ]
         , if pkg.broken then
@@ -341,9 +341,8 @@ viewInstructions =
 viewPackageDetails : String -> Package -> Html Msg
 viewPackageDetails name pkg =
     div []
-        [ h2 [ class "mb-4" ] [ text name ]
+        [ h2 [ class "mb-4" ] [ text (name ++ " v" ++ pkg.version)]
         , hr [] []
-        , viewDetailSection "Version" pkg.version
         , viewDetailSection "Description" pkg.description
         , if String.isEmpty pkg.homepage then
             text ""
