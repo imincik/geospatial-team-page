@@ -1,4 +1,4 @@
-name: Deploy ui
+name: Deploy web
 
 on:
   push:
@@ -41,8 +41,8 @@ jobs:
         uses: actions/configure-pages@v4
 
       # FIXME: avoid building with disabled sandbox
-      - name: Build UI
-        run: nix build .#web--accept-flake-config --option sandbox relaxed
+      - name: Build package
+        run: nix build .#web --accept-flake-config --option sandbox relaxed
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
