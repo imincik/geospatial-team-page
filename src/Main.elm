@@ -211,7 +211,7 @@ viewMenuPanel =
             , target "_blank"
             , class "btn btn-outline-dark"
             ]
-            [ text "Update queue" ]
+            [ text "Update Queue" ]
         , a
             [ href "https://search.nixos.org/packages"
             , target "_blank"
