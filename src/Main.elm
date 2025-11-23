@@ -3,7 +3,7 @@ module Main exposing (main)
 import Browser
 import Dict exposing (Dict)
 import Html exposing (..)
-import Html.Attributes exposing (attribute, class, href, placeholder, target, value)
+import Html.Attributes exposing (attribute, class, href, placeholder, src, style, target, value)
 import Html.Events exposing (onClick, onInput)
 import Http
 import Json.Decode as Decode exposing (Decoder)
@@ -375,7 +375,29 @@ viewInstructions : Html Msg
 viewInstructions =
     div []
         [ div [ class "mb-4" ]
-            [ p [] [ text "Search for packages by name or description. Click on package to see more details." ]
+            [ p []
+                [ a
+                    [ href "https://github.com/imincik/nix-utils/actions/workflows/hydra-build-status-linux.yml"
+                    , target "_blank"
+                    ]
+                    [ img
+                        [ src "https://github.com/imincik/nix-utils/actions/workflows/hydra-build-status-linux.yml/badge.svg"
+                        , class "me-2"
+                        , style "height" "30px"
+                        ]
+                        []
+                    ]
+                , a
+                    [ href "https://github.com/imincik/nix-utils/actions/workflows/hydra-build-status-darwin.yml"
+                    , target "_blank"
+                    ]
+                    [ img
+                        [ src "https://github.com/imincik/nix-utils/actions/workflows/hydra-build-status-darwin.yml/badge.svg"
+                        , style "height" "30px"
+                        ]
+                        []
+                    ]
+                ]
             , hr [] []
             , p []
                 [ text "This website is NOT an official Geospatial Team project. It was made by "
