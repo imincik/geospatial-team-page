@@ -224,6 +224,12 @@ viewMenuPanel =
             , class "btn btn-outline-dark"
             ]
             [ text "Options Search" ]
+        , a
+            [ href "https://github.com/NixOS/nixpkgs/blob/master/CONTRIBUTING.md"
+            , target "_blank"
+            , class "btn btn-outline-dark"
+            ]
+            [ text "Contributing" ]
         ]
 
 
