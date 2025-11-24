@@ -86,7 +86,6 @@ let
       description = meta.description or "";
       license = extractLicense (meta.license or null);
       homepage = meta.homepage or "";
-      platforms = meta.platforms or [ ];
     };
 
   recursePackageSet =

@@ -55,7 +55,6 @@ type alias Package =
     , description : String
     , homepage : String
     , license : String
-    , platforms : List String
     , category : String
     }
 
@@ -606,11 +605,10 @@ packagesDecoder =
 
 packageDataDecoder : Decoder Package
 packageDataDecoder =
-    Decode.map7 Package
+    Decode.map6 Package
         (Decode.field "version" Decode.string)
         (Decode.field "broken" Decode.bool)
         (Decode.field "description" Decode.string)
         (Decode.field "homepage" Decode.string)
         (Decode.field "license" Decode.string)
-        (Decode.field "platforms" (Decode.list Decode.string))
         (Decode.succeed "")
