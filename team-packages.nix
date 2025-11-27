@@ -80,7 +80,18 @@ let
     let
       meta = pkg.meta or { };
       position = meta.position or "";
-      recipePath = if position != "" then (builtins.unsafeDiscardStringContext position) else "";
+      fullPath = if position != "" then (builtins.unsafeDiscardStringContext position) else "";
+
+      # Remove /nix/store/<hash>/ prefix and line number from path using regex
+      cleanPath =
+        if fullPath != "" then
+          let
+            # Match /nix/store/<hash>/path/to/file.nix:123 -> path/to/file.nix
+            matched = builtins.match "/nix/store/[^/]+/([^:]+):?.*" fullPath;
+          in
+          if matched != null then builtins.head matched else fullPath
+        else
+          "";
     in
     {
       version = pkg.version or "unknown";
@@ -88,7 +99,7 @@ let
       description = meta.description or "";
       license = extractLicense (meta.license or null);
       homepage = meta.homepage or "";
-      recipe = recipePath;
+      recipe = cleanPath;
     };
 
   recursePackageSet =

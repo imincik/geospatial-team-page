@@ -466,28 +466,9 @@ viewInstructions =
         ]
 
 
-cleanRecipePath : String -> String
-cleanRecipePath recipePath =
-    let
-        -- Remove /nix/store/<hash> prefix (first 4 components)
-        -- Example: /nix/store/xxx-source/pkgs/default.nix:123 -> pkgs/default.nix
-        pathWithoutStore =
-            String.split "/" recipePath
-                |> List.drop 4
-                |> String.join "/"
-
-        -- Remove line number if present (format: "pkgs/path/file.nix:123")
-        pathOnly =
-            String.split ":" pathWithoutStore
-                |> List.head
-                |> Maybe.withDefault pathWithoutStore
-    in
-    pathOnly
-
-
 recipeToGithubUrl : String -> String
 recipeToGithubUrl recipePath =
-    "https://github.com/NixOS/nixpkgs/blob/master/" ++ cleanRecipePath recipePath
+    "https://github.com/NixOS/nixpkgs/blob/master/" ++ recipePath
 
 
 viewPackageDetails : String -> Package -> Html Msg
@@ -532,7 +513,7 @@ viewPackageDetails name pkg =
                     , target "_blank"
                     , class "text-warning"
                     ]
-                    [ text (cleanRecipePath pkg.recipe) ]
+                    [ text pkg.recipe ]
                 ]
             , hr [] []
             ]
