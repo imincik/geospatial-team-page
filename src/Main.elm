@@ -57,6 +57,14 @@ type alias Package =
     , license : String
     , category : String
     , recipe : String
+    , versions : Versions
+    }
+
+
+type alias Versions =
+    { master : String
+    , unstable : String
+    , stable : String
     }
 
 
@@ -474,9 +482,39 @@ recipeToGithubUrl recipePath =
 viewPackageDetails : String -> Package -> Html Msg
 viewPackageDetails name pkg =
     div []
-        [ h2 [ class "mb-4" ] [ text (name ++ " - v" ++ pkg.version) ]
+        [ h2 [ class "mb-4" ] [ text name ]
         , hr [] []
         , viewDetailSection "Description" pkg.description
+        , div []
+            [ h4 [] [ text "Versions" ]
+            , ul []
+                [ li []
+                    [ text ("Master: " ++ pkg.versions.master) ]
+                , li []
+                    [ text
+                        ("Unstable: "
+                            ++ (if String.isEmpty pkg.versions.unstable then
+                                    "N/A"
+
+                                else
+                                    pkg.versions.unstable
+                               )
+                        )
+                    ]
+                , li []
+                    [ text
+                        ("Stable: "
+                            ++ (if String.isEmpty pkg.versions.stable then
+                                    "N/A"
+
+                                else
+                                    pkg.versions.stable
+                               )
+                        )
+                    ]
+                ]
+            , hr [] []
+            ]
         , if String.isEmpty pkg.homepage then
             text ""
 
@@ -621,9 +659,17 @@ packagesDecoder =
             )
 
 
+versionsDecoder : Decoder Versions
+versionsDecoder =
+    Decode.map3 Versions
+        (Decode.field "master" Decode.string)
+        (Decode.field "unstable" Decode.string)
+        (Decode.field "stable" Decode.string)
+
+
 packageDataDecoder : Decoder Package
 packageDataDecoder =
-    Decode.map7 Package
+    Decode.map8 Package
         (Decode.field "version" Decode.string)
         (Decode.field "broken" Decode.bool)
         (Decode.field "description" Decode.string)
@@ -631,3 +677,4 @@ packageDataDecoder =
         (Decode.field "license" Decode.string)
         (Decode.succeed "")
         (Decode.field "recipe" Decode.string)
+        (Decode.field "versions" versionsDecoder)

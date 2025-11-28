@@ -9,6 +9,16 @@
     config.allowUnfree = true;
   },
 
+  pkgsUnstable ? import (fetchTarball "https://github.com/NixOS/nixpkgs/archive/nixos-unstable.tar.gz") {
+    config.allowBroken = true;
+    config.allowUnfree = true;
+  },
+
+  pkgsStable ? import (fetchTarball "https://github.com/NixOS/nixpkgs/archive/nixos-25.05.tar.gz") {
+    config.allowBroken = true;
+    config.allowUnfree = true;
+  },
+
   team ? "geospatial",
 
   showBroken ? true, # show broken packages
@@ -17,6 +27,7 @@
 let
   inherit (pkgs.lib.debug) traceVal;
   inherit (pkgs.lib)
+    attrByPath
     collect
     elem
     filterAttrsRecursive
@@ -26,6 +37,7 @@ let
     listToAttrs
     map
     mapAttrs
+    splitString
     ;
 
   myTeam = pkgs.lib.teams.${team};
@@ -62,6 +74,16 @@ let
     in
     if result.success then result.value else false;
 
+  # Lookup a package by path in an alternate package set
+  # Example: lookupPackage "python313Packages.shapely" pkgsUnstable
+  lookupPackage =
+    pkgPath: altPkgs:
+    let
+      pathParts = splitString "." pkgPath;
+      result = builtins.tryEval (attrByPath pathParts null altPkgs);
+    in
+    if result.success then result.value else null;
+
   extractLicense =
     license:
     if license == null then
@@ -76,7 +98,7 @@ let
       "";
 
   extractMetadata =
-    pkg:
+    pkg: pkgUnstable: pkgStable:
     let
       meta = pkg.meta or { };
       position = meta.position or "";
@@ -92,14 +114,21 @@ let
           if matched != null then builtins.head matched else fullPath
         else
           "";
+
+      pkgVersion = pkg.version or "unknown";
     in
     {
-      version = pkg.version or "unknown";
+      version = pkgVersion;
       broken = meta.broken or false;
       description = meta.description or "";
       license = extractLicense (meta.license or null);
       homepage = meta.homepage or "";
       recipe = cleanPath;
+      versions = {
+        master = pkgVersion;
+        unstable = if pkgUnstable != null then (pkgUnstable.version or "") else "";
+        stable = if pkgStable != null then (pkgStable.version or "") else "";
+      };
     };
 
   recursePackageSet =
@@ -108,9 +137,14 @@ let
       name: pkg:
       if isDerivationRobust pkg then
         if isMaintainedBy pkg && brokenFilter pkg then
+          let
+            pkgPath = if pkgSetName != null then pkgSetName + "." + name else name;
+            pkgUnstable = lookupPackage pkgPath pkgsUnstable;
+            pkgStable = lookupPackage pkgPath pkgsStable;
+          in
           {
-            name = "${if pkgSetName != null then pkgSetName + "." + name else name}";
-            data = extractMetadata pkg;
+            name = pkgPath;
+            data = extractMetadata pkg pkgUnstable pkgStable;
           }
         else
           null
