@@ -109,9 +109,9 @@
     "homepage": "https://geoserver.org/",
     "license": "GPL-2.0-or-later",
     "recipe": "pkgs/by-name/ge/geoserver/package.nix",
-    "version": "2.27.2",
+    "version": "2.28.1",
     "versions": {
-      "master": "2.27.2",
+      "master": "2.28.1",
       "stable": "2.27.1",
       "unstable": "2.27.2"
     }
@@ -317,9 +317,9 @@
     "homepage": "https://mapserver.org/",
     "license": "MIT",
     "recipe": "pkgs/by-name/ma/mapserver/package.nix",
-    "version": "8.4.1",
+    "version": "8.6.0",
     "versions": {
-      "master": "8.4.1",
+      "master": "8.6.0",
       "stable": "8.4.0",
       "unstable": "8.4.1"
     }
@@ -421,9 +421,9 @@
     "homepage": "https://pdal.io",
     "license": "BSD-3-Clause",
     "recipe": "pkgs/by-name/pd/pdal/package.nix",
-    "version": "2.9.2",
+    "version": "2.9.3",
     "versions": {
-      "master": "2.9.2",
+      "master": "2.9.3",
       "stable": "2.8.4",
       "unstable": "2.9.2"
     }
@@ -460,9 +460,9 @@
     "homepage": "https://github.com/protomaps/go-pmtiles",
     "license": "BSD-3-Clause",
     "recipe": "pkgs/by-name/pm/pmtiles/package.nix",
-    "version": "1.28.2",
+    "version": "1.28.3",
     "versions": {
-      "master": "1.28.2",
+      "master": "1.28.3",
       "stable": "1.28.0",
       "unstable": "1.28.2"
     }
@@ -1721,9 +1721,9 @@
     "homepage": "https://www.qgis.org",
     "license": "GPL-2.0-or-later",
     "recipe": "pkgs/applications/gis/qgis/unwrapped.nix",
-    "version": "3.44.4",
+    "version": "3.44.5",
     "versions": {
-      "master": "3.44.4",
+      "master": "3.44.5",
       "stable": "3.42.3",
       "unstable": "3.44.4"
     }
