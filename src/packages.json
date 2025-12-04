@@ -997,7 +997,7 @@
     "versions": {
       "master": "2.0.7",
       "stable": "2.0.0",
-      "unstable": "2.0.6"
+      "unstable": "2.0.7"
     }
   },
   "python312Packages.osmpythontools": {
@@ -1491,7 +1491,7 @@
     "versions": {
       "master": "2.0.7",
       "stable": "2.0.0",
-      "unstable": "2.0.6"
+      "unstable": "2.0.7"
     }
   },
   "python313Packages.osmpythontools": {
@@ -1751,7 +1751,7 @@
     "versions": {
       "master": "9.10.2",
       "stable": "9.9.1",
-      "unstable": "9.10.1"
+      "unstable": "9.10.2"
     }
   },
   "sfcgal": {
