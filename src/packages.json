@@ -113,7 +113,7 @@
     "versions": {
       "master": "2.28.1",
       "stable": "2.27.1",
-      "unstable": "2.27.2"
+      "unstable": "2.28.1"
     }
   },
   "graphhopper": {
@@ -321,7 +321,7 @@
     "versions": {
       "master": "8.6.0",
       "stable": "8.4.0",
-      "unstable": "8.4.1"
+      "unstable": "8.6.0"
     }
   },
   "mbtileserver": {
@@ -425,7 +425,7 @@
     "versions": {
       "master": "2.9.3",
       "stable": "2.8.4",
-      "unstable": "2.9.2"
+      "unstable": "2.9.3"
     }
   },
   "pg_featureserv": {
@@ -464,7 +464,7 @@
     "versions": {
       "master": "1.28.3",
       "stable": "1.28.0",
-      "unstable": "1.28.2"
+      "unstable": "1.28.3"
     }
   },
   "postgresql14Packages.pgrouting": {
@@ -1205,7 +1205,7 @@
     "versions": {
       "master": "2.1.2",
       "stable": "2.0.7",
-      "unstable": "2.1.1"
+      "unstable": "2.1.2"
     }
   },
   "python312Packages.xyzservices": {
@@ -1699,7 +1699,7 @@
     "versions": {
       "master": "2.1.2",
       "stable": "2.0.7",
-      "unstable": "2.1.1"
+      "unstable": "2.1.2"
     }
   },
   "python313Packages.xyzservices": {
@@ -1725,7 +1725,7 @@
     "versions": {
       "master": "3.44.5",
       "stable": "3.42.3",
-      "unstable": "3.44.4"
+      "unstable": "3.44.5"
     }
   },
   "qgis-ltr": {
@@ -1738,7 +1738,7 @@
     "versions": {
       "master": "3.40.13",
       "stable": "3.40.7",
-      "unstable": "3.40.12"
+      "unstable": "3.40.13"
     }
   },
   "saga": {
