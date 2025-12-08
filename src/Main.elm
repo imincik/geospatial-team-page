@@ -467,8 +467,8 @@ viewInstructions =
                     [ text "Ivan Mincik (@imincik), " ]
                 , text "a member of the Geospatial Team. Report issues or submit PRs in "
                 , a
-                    [ href "https://github.com/imincik/geospatial-nix-page", target "_blank" ]
-                    [ text "https://github.com/imincik/geospatial-nix-page ." ]
+                    [ href "https://github.com/imincik/geospatial-team-page", target "_blank" ]
+                    [ text "https://github.com/imincik/geospatial-team-page ." ]
                 ]
             ]
         ]
