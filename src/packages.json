@@ -711,7 +711,7 @@
     "versions": {
       "master": "9.7.1",
       "stable": "9.6.1",
-      "unstable": "9.7.0"
+      "unstable": "9.7.1"
     }
   },
   "protozero": {
