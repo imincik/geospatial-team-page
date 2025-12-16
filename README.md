@@ -1,4 +1,12 @@
-# Nixpkgs maintainers page - Geospatial team
+# Nixpkgs team page
 
-Unofficial page for Geospatial nixpkgs maintainers containing list of packages,
-and information and resources which I frequently use.
+Team page for nixpkgs maintainers.
+
+
+## Development
+
+* Launch development environment and follow instructions
+
+```
+  nix develop
+```
