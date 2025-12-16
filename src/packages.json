@@ -57,9 +57,9 @@
     "homepage": "https://www.gdal.org/",
     "license": "MIT",
     "recipe": "pkgs/by-name/gd/gdal/package.nix",
-    "version": "3.11.4",
+    "version": "3.12.0",
     "versions": {
-      "master": "3.11.4",
+      "master": "3.12.0",
       "stable": "3.11.4",
       "unstable": "3.11.4"
     }
@@ -70,9 +70,9 @@
     "homepage": "https://www.gdal.org/",
     "license": "MIT",
     "recipe": "pkgs/by-name/gd/gdal/package.nix",
-    "version": "3.11.4",
+    "version": "3.12.0",
     "versions": {
-      "master": "3.11.4",
+      "master": "3.12.0",
       "stable": "3.11.4",
       "unstable": "3.11.4"
     }
@@ -337,6 +337,19 @@
       "unstable": "0.11.0"
     }
   },
+  "merkaartor": {
+    "broken": false,
+    "description": "OpenStreetMap editor",
+    "homepage": "https://merkaartor.be/",
+    "license": "GPL-2.0-or-later",
+    "recipe": "pkgs/by-name/me/merkaartor/package.nix",
+    "version": "0.20.0",
+    "versions": {
+      "master": "0.20.0",
+      "stable": "0.20.0",
+      "unstable": "0.20.0"
+    }
+  },
   "nominatim": {
     "broken": false,
     "description": "Search engine for OpenStreetMap data (DB, CLI)",
@@ -408,9 +421,9 @@
     "homepage": "https://www.orfeo-toolbox.org/",
     "license": "Apache-2.0",
     "recipe": "pkgs/by-name/ot/otb/package.nix",
-    "version": "10.0-unstable-2025-04-03",
+    "version": "10.0-unstable-2025-12-11",
     "versions": {
-      "master": "10.0-unstable-2025-04-03",
+      "master": "10.0-unstable-2025-12-11",
       "stable": "10.0-unstable-2025-04-03",
       "unstable": "10.0-unstable-2025-04-03"
     }
@@ -811,9 +824,9 @@
     "homepage": "https://www.gdal.org/",
     "license": "MIT",
     "recipe": "pkgs/by-name/gd/gdal/package.nix",
-    "version": "3.11.4",
+    "version": "3.12.0",
     "versions": {
-      "master": "3.11.4",
+      "master": "3.12.0",
       "stable": "3.11.4",
       "unstable": "3.11.4"
     }
@@ -867,7 +880,7 @@
     "versions": {
       "master": "2025.12.0",
       "stable": "2024.8.0",
-      "unstable": "2024.8.0"
+      "unstable": "2025.12.0"
     }
   },
   "python312Packages.geopandas": {
@@ -1149,9 +1162,9 @@
     "homepage": "https://rasterio.readthedocs.io/",
     "license": "BSD-3-Clause",
     "recipe": "pkgs/development/python-modules/rasterio/default.nix",
-    "version": "1.4.3",
+    "version": "1.4.4",
     "versions": {
-      "master": "1.4.3",
+      "master": "1.4.4",
       "stable": "1.4.3",
       "unstable": "1.4.3"
     }
@@ -1305,9 +1318,9 @@
     "homepage": "https://www.gdal.org/",
     "license": "MIT",
     "recipe": "pkgs/by-name/gd/gdal/package.nix",
-    "version": "3.11.4",
+    "version": "3.12.0",
     "versions": {
-      "master": "3.11.4",
+      "master": "3.12.0",
       "stable": "3.11.4",
       "unstable": "3.11.4"
     }
@@ -1361,7 +1374,7 @@
     "versions": {
       "master": "2025.12.0",
       "stable": "2024.8.0",
-      "unstable": "2024.8.0"
+      "unstable": "2025.12.0"
     }
   },
   "python313Packages.geopandas": {
@@ -1643,9 +1656,9 @@
     "homepage": "https://rasterio.readthedocs.io/",
     "license": "BSD-3-Clause",
     "recipe": "pkgs/development/python-modules/rasterio/default.nix",
-    "version": "1.4.3",
+    "version": "1.4.4",
     "versions": {
-      "master": "1.4.3",
+      "master": "1.4.4",
       "stable": "1.4.3",
       "unstable": "1.4.3"
     }
@@ -1817,6 +1830,19 @@
       "master": "3.10.2",
       "stable": "3.10.2",
       "unstable": "3.10.2"
+    }
+  },
+  "sumo": {
+    "broken": false,
+    "description": "SUMO traffic simulator",
+    "homepage": "https://github.com/eclipse/sumo",
+    "license": "EPL-2.0",
+    "recipe": "pkgs/by-name/su/sumo/package.nix",
+    "version": "1.25.0",
+    "versions": {
+      "master": "1.25.0",
+      "stable": "1.24.0",
+      "unstable": "1.24.0"
     }
   },
   "t-rex": {
