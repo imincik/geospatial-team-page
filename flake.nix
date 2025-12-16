@@ -37,7 +37,7 @@
       ];
 
       imports = [
-        ./nix/develop.nix
+        ./flake/develop.nix
       ];
 
       perSystem =
