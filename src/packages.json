@@ -880,7 +880,7 @@
     "versions": {
       "master": "2025.12.1",
       "stable": "2024.8.0",
-      "unstable": "2025.12.0"
+      "unstable": "2025.12.1"
     }
   },
   "python312Packages.geopandas": {
@@ -932,7 +932,7 @@
     "versions": {
       "master": "0.8.1",
       "stable": "0.8.0",
-      "unstable": "0.8.0"
+      "unstable": "0.8.1"
     }
   },
   "python312Packages.libpysal": {
@@ -1374,7 +1374,7 @@
     "versions": {
       "master": "2025.12.1",
       "stable": "2024.8.0",
-      "unstable": "2025.12.0"
+      "unstable": "2025.12.1"
     }
   },
   "python313Packages.geopandas": {
@@ -1426,7 +1426,7 @@
     "versions": {
       "master": "0.8.1",
       "stable": "0.8.0",
-      "unstable": "0.8.0"
+      "unstable": "0.8.1"
     }
   },
   "python313Packages.libpysal": {
@@ -1764,7 +1764,7 @@
     "versions": {
       "master": "9.11.0",
       "stable": "9.10.1",
-      "unstable": "9.10.3"
+      "unstable": "9.11.0"
     }
   },
   "sfcgal": {
