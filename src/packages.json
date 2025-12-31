@@ -57,9 +57,9 @@
     "homepage": "https://www.gdal.org/",
     "license": "MIT",
     "recipe": "pkgs/by-name/gd/gdal/package.nix",
-    "version": "3.12.0",
+    "version": "3.12.1",
     "versions": {
-      "master": "3.12.0",
+      "master": "3.12.1",
       "stable": "3.11.4",
       "unstable": "3.12.0"
     }
@@ -70,9 +70,9 @@
     "homepage": "https://www.gdal.org/",
     "license": "MIT",
     "recipe": "pkgs/by-name/gd/gdal/package.nix",
-    "version": "3.12.0",
+    "version": "3.12.1",
     "versions": {
-      "master": "3.12.0",
+      "master": "3.12.1",
       "stable": "3.11.4",
       "unstable": "3.12.0"
     }
@@ -740,500 +740,6 @@
       "unstable": "1.8.1"
     }
   },
-  "python312Packages.basemap": {
-    "broken": false,
-    "description": "Plot data on map projections with matplotlib",
-    "homepage": "https://matplotlib.org/basemap/",
-    "license": "MIT, LGPL-2.1",
-    "recipe": "pkgs/development/python-modules/basemap/default.nix",
-    "version": "2.0.0",
-    "versions": {
-      "master": "2.0.0",
-      "stable": "2.0.0",
-      "unstable": "2.0.0"
-    }
-  },
-  "python312Packages.basemap-data": {
-    "broken": false,
-    "description": "Data assets for matplotlib basemap",
-    "homepage": "https://matplotlib.org/basemap/",
-    "license": "MIT, LGPL-3.0-or-later",
-    "recipe": "pkgs/development/python-modules/basemap-data/default.nix",
-    "version": "2.0.0",
-    "versions": {
-      "master": "2.0.0",
-      "stable": "2.0.0",
-      "unstable": "2.0.0"
-    }
-  },
-  "python312Packages.basemap-data-hires": {
-    "broken": false,
-    "description": "High-resolution data assets for matplotlib basemap",
-    "homepage": "https://matplotlib.org/basemap/",
-    "license": "LGPL-3.0-or-later",
-    "recipe": "pkgs/development/python-modules/basemap-data-hires/default.nix",
-    "version": "2.0.0",
-    "versions": {
-      "master": "2.0.0",
-      "stable": "2.0.0",
-      "unstable": "2.0.0"
-    }
-  },
-  "python312Packages.color-operations": {
-    "broken": false,
-    "description": "Apply basic color-oriented image operations. Fork of rio-color",
-    "homepage": "https://github.com/vincentsarago/color-operations",
-    "license": "MIT",
-    "recipe": "pkgs/development/python-modules/color-operations/default.nix",
-    "version": "0.2.0",
-    "versions": {
-      "master": "0.2.0",
-      "stable": "0.2.0",
-      "unstable": "0.2.0"
-    }
-  },
-  "python312Packages.fiona": {
-    "broken": false,
-    "description": "OGR's neat, nimble, no-nonsense API for Python",
-    "homepage": "https://fiona.readthedocs.io/",
-    "license": "BSD-3-Clause",
-    "recipe": "pkgs/development/python-modules/fiona/default.nix",
-    "version": "1.10.1",
-    "versions": {
-      "master": "1.10.1",
-      "stable": "1.10.1",
-      "unstable": "1.10.1"
-    }
-  },
-  "python312Packages.folium": {
-    "broken": false,
-    "description": "Make beautiful maps with Leaflet.js & Python",
-    "homepage": "https://github.com/python-visualization/folium",
-    "license": "MIT",
-    "recipe": "pkgs/development/python-modules/folium/default.nix",
-    "version": "0.20.0",
-    "versions": {
-      "master": "0.20.0",
-      "stable": "0.20.0",
-      "unstable": "0.20.0"
-    }
-  },
-  "python312Packages.gdal": {
-    "broken": false,
-    "description": "Translator library for raster geospatial data formats",
-    "homepage": "https://www.gdal.org/",
-    "license": "MIT",
-    "recipe": "pkgs/by-name/gd/gdal/package.nix",
-    "version": "3.12.0",
-    "versions": {
-      "master": "3.12.0",
-      "stable": "3.11.4",
-      "unstable": "3.12.0"
-    }
-  },
-  "python312Packages.geoarrow-c": {
-    "broken": false,
-    "description": "Experimental C and C++ implementation of the GeoArrow specification",
-    "homepage": "https://github.com/geoarrow/geoarrow-c",
-    "license": "Apache-2.0",
-    "recipe": "pkgs/development/python-modules/geoarrow-c/default.nix",
-    "version": "0.3.1",
-    "versions": {
-      "master": "0.3.1",
-      "stable": "0.3.1",
-      "unstable": "0.3.1"
-    }
-  },
-  "python312Packages.geoarrow-pandas": {
-    "broken": true,
-    "description": "Python implementation of the GeoArrow specification",
-    "homepage": "https://github.com/geoarrow/geoarrow-python",
-    "license": "Apache-2.0",
-    "recipe": "pkgs/development/python-modules/geoarrow-pandas/default.nix",
-    "version": "0.1.2",
-    "versions": {
-      "master": "0.1.2",
-      "stable": "0.1.2",
-      "unstable": "0.1.2"
-    }
-  },
-  "python312Packages.geoarrow-pyarrow": {
-    "broken": false,
-    "description": "PyArrow implementation of geospatial data types",
-    "homepage": "https://github.com/geoarrow/geoarrow-python",
-    "license": "Apache-2.0",
-    "recipe": "pkgs/development/python-modules/geoarrow-pyarrow/default.nix",
-    "version": "0.2.0",
-    "versions": {
-      "master": "0.2.0",
-      "stable": "0.2.0",
-      "unstable": "0.2.0"
-    }
-  },
-  "python312Packages.geodatasets": {
-    "broken": false,
-    "description": "Spatial data examples",
-    "homepage": "https://geodatasets.readthedocs.io/",
-    "license": "BSD-3-Clause",
-    "recipe": "pkgs/development/python-modules/geodatasets/default.nix",
-    "version": "2025.12.1",
-    "versions": {
-      "master": "2025.12.1",
-      "stable": "2024.8.0",
-      "unstable": "2025.12.1"
-    }
-  },
-  "python312Packages.geopandas": {
-    "broken": false,
-    "description": "Python geospatial data analysis framework",
-    "homepage": "https://geopandas.org",
-    "license": "BSD-3-Clause",
-    "recipe": "pkgs/development/python-modules/geopandas/default.nix",
-    "version": "1.1.1",
-    "versions": {
-      "master": "1.1.1",
-      "stable": "1.1.1",
-      "unstable": "1.1.1"
-    }
-  },
-  "python312Packages.inequality": {
-    "broken": false,
-    "description": "Spatial inequality analysis",
-    "homepage": "https://github.com/pysal/inequality",
-    "license": "BSD-3-Clause",
-    "recipe": "pkgs/development/python-modules/inequality/default.nix",
-    "version": "1.1.2",
-    "versions": {
-      "master": "1.1.2",
-      "stable": "1.1.2",
-      "unstable": "1.1.2"
-    }
-  },
-  "python312Packages.laspy": {
-    "broken": false,
-    "description": "Interface for reading/modifying/creating .LAS LIDAR files",
-    "homepage": "https://github.com/laspy/laspy",
-    "license": "BSD-2-Clause",
-    "recipe": "pkgs/development/python-modules/laspy/default.nix",
-    "version": "2.6.1",
-    "versions": {
-      "master": "2.6.1",
-      "stable": "2.6.1",
-      "unstable": "2.6.1"
-    }
-  },
-  "python312Packages.lazrs": {
-    "broken": false,
-    "description": "Python bindings for laz-rs",
-    "homepage": "https://github.com/laz-rs/laz-rs-python",
-    "license": "MIT",
-    "recipe": "pkgs/development/python-modules/lazrs/default.nix",
-    "version": "0.8.1",
-    "versions": {
-      "master": "0.8.1",
-      "stable": "0.8.0",
-      "unstable": "0.8.1"
-    }
-  },
-  "python312Packages.libpysal": {
-    "broken": false,
-    "description": "Library of spatial analysis functions",
-    "homepage": "https://pysal.org/libpysal/",
-    "license": "BSD-3-Clause",
-    "recipe": "pkgs/development/python-modules/libpysal/default.nix",
-    "version": "4.13.0",
-    "versions": {
-      "master": "4.13.0",
-      "stable": "4.13.0",
-      "unstable": "4.13.0"
-    }
-  },
-  "python312Packages.mapclassify": {
-    "broken": false,
-    "description": "Classification Schemes for Choropleth Maps",
-    "homepage": "https://pysal.org/mapclassify/",
-    "license": "BSD-3-Clause",
-    "recipe": "pkgs/development/python-modules/mapclassify/default.nix",
-    "version": "2.10.0",
-    "versions": {
-      "master": "2.10.0",
-      "stable": "2.10.0",
-      "unstable": "2.10.0"
-    }
-  },
-  "python312Packages.momepy": {
-    "broken": false,
-    "description": "Urban Morphology Measuring Toolkit",
-    "homepage": "https://github.com/pysal/momepy",
-    "license": "BSD-3-Clause",
-    "recipe": "pkgs/development/python-modules/momepy/default.nix",
-    "version": "0.10.0",
-    "versions": {
-      "master": "0.10.0",
-      "stable": "0.10.0",
-      "unstable": "0.10.0"
-    }
-  },
-  "python312Packages.morecantile": {
-    "broken": false,
-    "description": "Construct and use map tile grids in different projection",
-    "homepage": "https://developmentseed.org/morecantile",
-    "license": "MIT",
-    "recipe": "pkgs/development/python-modules/morecantile/default.nix",
-    "version": "6.2.0",
-    "versions": {
-      "master": "6.2.0",
-      "stable": "6.2.0",
-      "unstable": "6.2.0"
-    }
-  },
-  "python312Packages.nominatim-api": {
-    "broken": false,
-    "description": "Search engine for OpenStreetMap data (API module)",
-    "homepage": "https://nominatim.org/",
-    "license": "GPL-2.0-or-later",
-    "recipe": "pkgs/by-name/no/nominatim/nominatim-api.nix",
-    "version": "5.2.0",
-    "versions": {
-      "master": "5.2.0",
-      "stable": "5.2.0",
-      "unstable": "5.2.0"
-    }
-  },
-  "python312Packages.osmnx": {
-    "broken": false,
-    "description": "Package to easily download, construct, project, visualize, and analyze complex street networks from OpenStreetMap with NetworkX",
-    "homepage": "https://github.com/gboeing/osmnx",
-    "license": "MIT",
-    "recipe": "pkgs/development/python-modules/osmnx/default.nix",
-    "version": "2.0.7",
-    "versions": {
-      "master": "2.0.7",
-      "stable": "2.0.6",
-      "unstable": "2.0.7"
-    }
-  },
-  "python312Packages.osmpythontools": {
-    "broken": false,
-    "description": "Library to access OpenStreetMap-related services",
-    "homepage": "https://github.com/mocnik-science/osm-python-tools",
-    "license": "GPL-3.0-only",
-    "recipe": "pkgs/development/python-modules/osmpythontools/default.nix",
-    "version": "0.3.6",
-    "versions": {
-      "master": "0.3.6",
-      "stable": "0.3.6",
-      "unstable": "0.3.6"
-    }
-  },
-  "python312Packages.owslib": {
-    "broken": false,
-    "description": "Client for Open Geospatial Consortium web service interface standards",
-    "homepage": "https://www.osgeo.org/projects/owslib/",
-    "license": "BSD-3-Clause",
-    "recipe": "pkgs/development/python-modules/owslib/default.nix",
-    "version": "0.35.0",
-    "versions": {
-      "master": "0.35.0",
-      "stable": "0.35.0",
-      "unstable": "0.35.0"
-    }
-  },
-  "python312Packages.pentapy": {
-    "broken": false,
-    "description": "A Python toolbox for pentadiagonal linear systems",
-    "homepage": "https://github.com/GeoStat-Framework/pentapy",
-    "license": "MIT",
-    "recipe": "pkgs/development/python-modules/pentapy/default.nix",
-    "version": "1.4.1",
-    "versions": {
-      "master": "1.4.1",
-      "stable": "1.4.1",
-      "unstable": "1.4.1"
-    }
-  },
-  "python312Packages.pixelmatch": {
-    "broken": false,
-    "description": "A pixel-level image comparison library",
-    "homepage": "https://github.com/whtsky/pixelmatch-py",
-    "license": "ISC",
-    "recipe": "pkgs/development/python-modules/pixelmatch/default.nix",
-    "version": "0.3.0",
-    "versions": {
-      "master": "0.3.0",
-      "stable": "0.3.0",
-      "unstable": "0.3.0"
-    }
-  },
-  "python312Packages.pygmt": {
-    "broken": false,
-    "description": "Python interface for the Generic Mapping Tools",
-    "homepage": "https://github.com/GenericMappingTools/pygmt",
-    "license": "BSD-3-Clause",
-    "recipe": "pkgs/development/python-modules/pygmt/default.nix",
-    "version": "0.17.0",
-    "versions": {
-      "master": "0.17.0",
-      "stable": "0.17.0",
-      "unstable": "0.17.0"
-    }
-  },
-  "python312Packages.pykrige": {
-    "broken": false,
-    "description": "Kriging Toolkit for Python",
-    "homepage": "https://github.com/GeoStat-Framework/PyKrige",
-    "license": "BSD-3-Clause",
-    "recipe": "pkgs/development/python-modules/pykrige/default.nix",
-    "version": "1.7.3",
-    "versions": {
-      "master": "1.7.3",
-      "stable": "1.7.3",
-      "unstable": "1.7.3"
-    }
-  },
-  "python312Packages.pyogrio": {
-    "broken": false,
-    "description": "Vectorized spatial vector file format I/O using GDAL/OGR",
-    "homepage": "https://pyogrio.readthedocs.io/",
-    "license": "MIT",
-    "recipe": "pkgs/development/python-modules/pyogrio/default.nix",
-    "version": "0.11.1",
-    "versions": {
-      "master": "0.11.1",
-      "stable": "0.11.1",
-      "unstable": "0.11.1"
-    }
-  },
-  "python312Packages.pyproj": {
-    "broken": false,
-    "description": "Python interface to PROJ library",
-    "homepage": "https://github.com/pyproj4/pyproj",
-    "license": "MIT",
-    "recipe": "pkgs/development/python-modules/pyproj/default.nix",
-    "version": "3.7.2",
-    "versions": {
-      "master": "3.7.2",
-      "stable": "3.7.2",
-      "unstable": "3.7.2"
-    }
-  },
-  "python312Packages.pystac": {
-    "broken": false,
-    "description": "Python library for working with any SpatioTemporal Asset Catalog (STAC)",
-    "homepage": "https://github.com/stac-utils/pystac",
-    "license": "Apache-2.0",
-    "recipe": "pkgs/development/python-modules/pystac/default.nix",
-    "version": "1.14.2",
-    "versions": {
-      "master": "1.14.2",
-      "stable": "1.14.1",
-      "unstable": "1.14.2"
-    }
-  },
-  "python312Packages.pystac-client": {
-    "broken": false,
-    "description": "Python client for working with STAC Catalogs and APIs",
-    "homepage": "https://github.com/stac-utils/pystac-client",
-    "license": "Apache-2.0",
-    "recipe": "pkgs/development/python-modules/pystac-client/default.nix",
-    "version": "0.9.0",
-    "versions": {
-      "master": "0.9.0",
-      "stable": "0.9.0",
-      "unstable": "0.9.0"
-    }
-  },
-  "python312Packages.python-mapnik": {
-    "broken": true,
-    "description": "Python bindings for Mapnik",
-    "homepage": "https://mapnik.org",
-    "license": "LGPL-2.1-or-later",
-    "recipe": "pkgs/development/python-modules/python-mapnik/default.nix",
-    "version": "4.1.3.unstable-2025-09-25",
-    "versions": {
-      "master": "4.1.3.unstable-2025-09-25",
-      "stable": "4.1.3.unstable-2025-09-25",
-      "unstable": "4.1.3.unstable-2025-09-25"
-    }
-  },
-  "python312Packages.rasterio": {
-    "broken": false,
-    "description": "Python package to read and write geospatial raster data",
-    "homepage": "https://rasterio.readthedocs.io/",
-    "license": "BSD-3-Clause",
-    "recipe": "pkgs/development/python-modules/rasterio/default.nix",
-    "version": "1.4.4",
-    "versions": {
-      "master": "1.4.4",
-      "stable": "1.4.3",
-      "unstable": "1.4.4"
-    }
-  },
-  "python312Packages.rio-tiler": {
-    "broken": true,
-    "description": "User friendly Rasterio plugin to read raster datasets",
-    "homepage": "https://cogeotiff.github.io/rio-tiler/",
-    "license": "BSD-3-Clause",
-    "recipe": "pkgs/development/python-modules/rio-tiler/default.nix",
-    "version": "7.8.1",
-    "versions": {
-      "master": "7.8.1",
-      "stable": "7.8.1",
-      "unstable": "7.8.1"
-    }
-  },
-  "python312Packages.rioxarray": {
-    "broken": false,
-    "description": "Geospatial xarray extension powered by rasterio",
-    "homepage": "https://corteva.github.io/rioxarray/",
-    "license": "Apache-2.0",
-    "recipe": "pkgs/development/python-modules/rioxarray/default.nix",
-    "version": "0.20.0",
-    "versions": {
-      "master": "0.20.0",
-      "stable": "0.20.0",
-      "unstable": "0.20.0"
-    }
-  },
-  "python312Packages.rtree": {
-    "broken": false,
-    "description": "R-Tree spatial index for Python GIS",
-    "homepage": "https://github.com/Toblerity/rtree",
-    "license": "MIT",
-    "recipe": "pkgs/development/python-modules/rtree/default.nix",
-    "version": "1.4.1",
-    "versions": {
-      "master": "1.4.1",
-      "stable": "1.4.1",
-      "unstable": "1.4.1"
-    }
-  },
-  "python312Packages.shapely": {
-    "broken": false,
-    "description": "Manipulation and analysis of geometric objects",
-    "homepage": "https://github.com/shapely/shapely",
-    "license": "BSD-3-Clause",
-    "recipe": "pkgs/development/python-modules/shapely/default.nix",
-    "version": "2.1.2",
-    "versions": {
-      "master": "2.1.2",
-      "stable": "2.1.1",
-      "unstable": "2.1.2"
-    }
-  },
-  "python312Packages.xyzservices": {
-    "broken": false,
-    "description": "Source of XYZ tiles providers",
-    "homepage": "https://github.com/geopandas/xyzservices",
-    "license": "BSD-3-Clause",
-    "recipe": "pkgs/development/python-modules/xyzservices/default.nix",
-    "version": "2025.4.0",
-    "versions": {
-      "master": "2025.4.0",
-      "stable": "2025.4.0",
-      "unstable": "2025.4.0"
-    }
-  },
   "python313Packages.basemap": {
     "broken": false,
     "description": "Plot data on map projections with matplotlib",
@@ -1318,9 +824,9 @@
     "homepage": "https://www.gdal.org/",
     "license": "MIT",
     "recipe": "pkgs/by-name/gd/gdal/package.nix",
-    "version": "3.12.0",
+    "version": "3.12.1",
     "versions": {
-      "master": "3.12.0",
+      "master": "3.12.1",
       "stable": "3.11.4",
       "unstable": "3.12.0"
     }
@@ -1716,6 +1222,500 @@
     }
   },
   "python313Packages.xyzservices": {
+    "broken": false,
+    "description": "Source of XYZ tiles providers",
+    "homepage": "https://github.com/geopandas/xyzservices",
+    "license": "BSD-3-Clause",
+    "recipe": "pkgs/development/python-modules/xyzservices/default.nix",
+    "version": "2025.4.0",
+    "versions": {
+      "master": "2025.4.0",
+      "stable": "2025.4.0",
+      "unstable": "2025.4.0"
+    }
+  },
+  "python314Packages.basemap": {
+    "broken": false,
+    "description": "Plot data on map projections with matplotlib",
+    "homepage": "https://matplotlib.org/basemap/",
+    "license": "MIT, LGPL-2.1",
+    "recipe": "pkgs/development/python-modules/basemap/default.nix",
+    "version": "2.0.0",
+    "versions": {
+      "master": "2.0.0",
+      "stable": "2.0.0",
+      "unstable": "2.0.0"
+    }
+  },
+  "python314Packages.basemap-data": {
+    "broken": false,
+    "description": "Data assets for matplotlib basemap",
+    "homepage": "https://matplotlib.org/basemap/",
+    "license": "MIT, LGPL-3.0-or-later",
+    "recipe": "pkgs/development/python-modules/basemap-data/default.nix",
+    "version": "2.0.0",
+    "versions": {
+      "master": "2.0.0",
+      "stable": "2.0.0",
+      "unstable": "2.0.0"
+    }
+  },
+  "python314Packages.basemap-data-hires": {
+    "broken": false,
+    "description": "High-resolution data assets for matplotlib basemap",
+    "homepage": "https://matplotlib.org/basemap/",
+    "license": "LGPL-3.0-or-later",
+    "recipe": "pkgs/development/python-modules/basemap-data-hires/default.nix",
+    "version": "2.0.0",
+    "versions": {
+      "master": "2.0.0",
+      "stable": "2.0.0",
+      "unstable": "2.0.0"
+    }
+  },
+  "python314Packages.color-operations": {
+    "broken": false,
+    "description": "Apply basic color-oriented image operations. Fork of rio-color",
+    "homepage": "https://github.com/vincentsarago/color-operations",
+    "license": "MIT",
+    "recipe": "pkgs/development/python-modules/color-operations/default.nix",
+    "version": "0.2.0",
+    "versions": {
+      "master": "0.2.0",
+      "stable": "0.2.0",
+      "unstable": "0.2.0"
+    }
+  },
+  "python314Packages.fiona": {
+    "broken": false,
+    "description": "OGR's neat, nimble, no-nonsense API for Python",
+    "homepage": "https://fiona.readthedocs.io/",
+    "license": "BSD-3-Clause",
+    "recipe": "pkgs/development/python-modules/fiona/default.nix",
+    "version": "1.10.1",
+    "versions": {
+      "master": "1.10.1",
+      "stable": "1.10.1",
+      "unstable": "1.10.1"
+    }
+  },
+  "python314Packages.folium": {
+    "broken": false,
+    "description": "Make beautiful maps with Leaflet.js & Python",
+    "homepage": "https://github.com/python-visualization/folium",
+    "license": "MIT",
+    "recipe": "pkgs/development/python-modules/folium/default.nix",
+    "version": "0.20.0",
+    "versions": {
+      "master": "0.20.0",
+      "stable": "0.20.0",
+      "unstable": "0.20.0"
+    }
+  },
+  "python314Packages.gdal": {
+    "broken": false,
+    "description": "Translator library for raster geospatial data formats",
+    "homepage": "https://www.gdal.org/",
+    "license": "MIT",
+    "recipe": "pkgs/by-name/gd/gdal/package.nix",
+    "version": "3.12.1",
+    "versions": {
+      "master": "3.12.1",
+      "stable": "3.11.4",
+      "unstable": "3.12.0"
+    }
+  },
+  "python314Packages.geoarrow-c": {
+    "broken": false,
+    "description": "Experimental C and C++ implementation of the GeoArrow specification",
+    "homepage": "https://github.com/geoarrow/geoarrow-c",
+    "license": "Apache-2.0",
+    "recipe": "pkgs/development/python-modules/geoarrow-c/default.nix",
+    "version": "0.3.1",
+    "versions": {
+      "master": "0.3.1",
+      "stable": "0.3.1",
+      "unstable": "0.3.1"
+    }
+  },
+  "python314Packages.geoarrow-pandas": {
+    "broken": true,
+    "description": "Python implementation of the GeoArrow specification",
+    "homepage": "https://github.com/geoarrow/geoarrow-python",
+    "license": "Apache-2.0",
+    "recipe": "pkgs/development/python-modules/geoarrow-pandas/default.nix",
+    "version": "0.1.2",
+    "versions": {
+      "master": "0.1.2",
+      "stable": "0.1.2",
+      "unstable": "0.1.2"
+    }
+  },
+  "python314Packages.geoarrow-pyarrow": {
+    "broken": false,
+    "description": "PyArrow implementation of geospatial data types",
+    "homepage": "https://github.com/geoarrow/geoarrow-python",
+    "license": "Apache-2.0",
+    "recipe": "pkgs/development/python-modules/geoarrow-pyarrow/default.nix",
+    "version": "0.2.0",
+    "versions": {
+      "master": "0.2.0",
+      "stable": "0.2.0",
+      "unstable": "0.2.0"
+    }
+  },
+  "python314Packages.geodatasets": {
+    "broken": false,
+    "description": "Spatial data examples",
+    "homepage": "https://geodatasets.readthedocs.io/",
+    "license": "BSD-3-Clause",
+    "recipe": "pkgs/development/python-modules/geodatasets/default.nix",
+    "version": "2025.12.1",
+    "versions": {
+      "master": "2025.12.1",
+      "stable": "2024.8.0",
+      "unstable": "2025.12.1"
+    }
+  },
+  "python314Packages.geopandas": {
+    "broken": false,
+    "description": "Python geospatial data analysis framework",
+    "homepage": "https://geopandas.org",
+    "license": "BSD-3-Clause",
+    "recipe": "pkgs/development/python-modules/geopandas/default.nix",
+    "version": "1.1.1",
+    "versions": {
+      "master": "1.1.1",
+      "stable": "1.1.1",
+      "unstable": "1.1.1"
+    }
+  },
+  "python314Packages.inequality": {
+    "broken": false,
+    "description": "Spatial inequality analysis",
+    "homepage": "https://github.com/pysal/inequality",
+    "license": "BSD-3-Clause",
+    "recipe": "pkgs/development/python-modules/inequality/default.nix",
+    "version": "1.1.2",
+    "versions": {
+      "master": "1.1.2",
+      "stable": "1.1.2",
+      "unstable": "1.1.2"
+    }
+  },
+  "python314Packages.laspy": {
+    "broken": false,
+    "description": "Interface for reading/modifying/creating .LAS LIDAR files",
+    "homepage": "https://github.com/laspy/laspy",
+    "license": "BSD-2-Clause",
+    "recipe": "pkgs/development/python-modules/laspy/default.nix",
+    "version": "2.6.1",
+    "versions": {
+      "master": "2.6.1",
+      "stable": "2.6.1",
+      "unstable": "2.6.1"
+    }
+  },
+  "python314Packages.lazrs": {
+    "broken": false,
+    "description": "Python bindings for laz-rs",
+    "homepage": "https://github.com/laz-rs/laz-rs-python",
+    "license": "MIT",
+    "recipe": "pkgs/development/python-modules/lazrs/default.nix",
+    "version": "0.8.1",
+    "versions": {
+      "master": "0.8.1",
+      "stable": "0.8.0",
+      "unstable": "0.8.1"
+    }
+  },
+  "python314Packages.libpysal": {
+    "broken": false,
+    "description": "Library of spatial analysis functions",
+    "homepage": "https://pysal.org/libpysal/",
+    "license": "BSD-3-Clause",
+    "recipe": "pkgs/development/python-modules/libpysal/default.nix",
+    "version": "4.13.0",
+    "versions": {
+      "master": "4.13.0",
+      "stable": "4.13.0",
+      "unstable": "4.13.0"
+    }
+  },
+  "python314Packages.mapclassify": {
+    "broken": false,
+    "description": "Classification Schemes for Choropleth Maps",
+    "homepage": "https://pysal.org/mapclassify/",
+    "license": "BSD-3-Clause",
+    "recipe": "pkgs/development/python-modules/mapclassify/default.nix",
+    "version": "2.10.0",
+    "versions": {
+      "master": "2.10.0",
+      "stable": "2.10.0",
+      "unstable": "2.10.0"
+    }
+  },
+  "python314Packages.momepy": {
+    "broken": false,
+    "description": "Urban Morphology Measuring Toolkit",
+    "homepage": "https://github.com/pysal/momepy",
+    "license": "BSD-3-Clause",
+    "recipe": "pkgs/development/python-modules/momepy/default.nix",
+    "version": "0.10.0",
+    "versions": {
+      "master": "0.10.0",
+      "stable": "0.10.0",
+      "unstable": "0.10.0"
+    }
+  },
+  "python314Packages.morecantile": {
+    "broken": false,
+    "description": "Construct and use map tile grids in different projection",
+    "homepage": "https://developmentseed.org/morecantile",
+    "license": "MIT",
+    "recipe": "pkgs/development/python-modules/morecantile/default.nix",
+    "version": "6.2.0",
+    "versions": {
+      "master": "6.2.0",
+      "stable": "6.2.0",
+      "unstable": "6.2.0"
+    }
+  },
+  "python314Packages.nominatim-api": {
+    "broken": false,
+    "description": "Search engine for OpenStreetMap data (API module)",
+    "homepage": "https://nominatim.org/",
+    "license": "GPL-2.0-or-later",
+    "recipe": "pkgs/by-name/no/nominatim/nominatim-api.nix",
+    "version": "5.2.0",
+    "versions": {
+      "master": "5.2.0",
+      "stable": "5.2.0",
+      "unstable": "5.2.0"
+    }
+  },
+  "python314Packages.osmnx": {
+    "broken": false,
+    "description": "Package to easily download, construct, project, visualize, and analyze complex street networks from OpenStreetMap with NetworkX",
+    "homepage": "https://github.com/gboeing/osmnx",
+    "license": "MIT",
+    "recipe": "pkgs/development/python-modules/osmnx/default.nix",
+    "version": "2.0.7",
+    "versions": {
+      "master": "2.0.7",
+      "stable": "2.0.6",
+      "unstable": "2.0.7"
+    }
+  },
+  "python314Packages.osmpythontools": {
+    "broken": false,
+    "description": "Library to access OpenStreetMap-related services",
+    "homepage": "https://github.com/mocnik-science/osm-python-tools",
+    "license": "GPL-3.0-only",
+    "recipe": "pkgs/development/python-modules/osmpythontools/default.nix",
+    "version": "0.3.6",
+    "versions": {
+      "master": "0.3.6",
+      "stable": "0.3.6",
+      "unstable": "0.3.6"
+    }
+  },
+  "python314Packages.owslib": {
+    "broken": false,
+    "description": "Client for Open Geospatial Consortium web service interface standards",
+    "homepage": "https://www.osgeo.org/projects/owslib/",
+    "license": "BSD-3-Clause",
+    "recipe": "pkgs/development/python-modules/owslib/default.nix",
+    "version": "0.35.0",
+    "versions": {
+      "master": "0.35.0",
+      "stable": "0.35.0",
+      "unstable": "0.35.0"
+    }
+  },
+  "python314Packages.pentapy": {
+    "broken": false,
+    "description": "A Python toolbox for pentadiagonal linear systems",
+    "homepage": "https://github.com/GeoStat-Framework/pentapy",
+    "license": "MIT",
+    "recipe": "pkgs/development/python-modules/pentapy/default.nix",
+    "version": "1.4.1",
+    "versions": {
+      "master": "1.4.1",
+      "stable": "1.4.1",
+      "unstable": "1.4.1"
+    }
+  },
+  "python314Packages.pixelmatch": {
+    "broken": false,
+    "description": "A pixel-level image comparison library",
+    "homepage": "https://github.com/whtsky/pixelmatch-py",
+    "license": "ISC",
+    "recipe": "pkgs/development/python-modules/pixelmatch/default.nix",
+    "version": "0.3.0",
+    "versions": {
+      "master": "0.3.0",
+      "stable": "0.3.0",
+      "unstable": "0.3.0"
+    }
+  },
+  "python314Packages.pygmt": {
+    "broken": false,
+    "description": "Python interface for the Generic Mapping Tools",
+    "homepage": "https://github.com/GenericMappingTools/pygmt",
+    "license": "BSD-3-Clause",
+    "recipe": "pkgs/development/python-modules/pygmt/default.nix",
+    "version": "0.17.0",
+    "versions": {
+      "master": "0.17.0",
+      "stable": "0.17.0",
+      "unstable": "0.17.0"
+    }
+  },
+  "python314Packages.pykrige": {
+    "broken": false,
+    "description": "Kriging Toolkit for Python",
+    "homepage": "https://github.com/GeoStat-Framework/PyKrige",
+    "license": "BSD-3-Clause",
+    "recipe": "pkgs/development/python-modules/pykrige/default.nix",
+    "version": "1.7.3",
+    "versions": {
+      "master": "1.7.3",
+      "stable": "1.7.3",
+      "unstable": "1.7.3"
+    }
+  },
+  "python314Packages.pyogrio": {
+    "broken": false,
+    "description": "Vectorized spatial vector file format I/O using GDAL/OGR",
+    "homepage": "https://pyogrio.readthedocs.io/",
+    "license": "MIT",
+    "recipe": "pkgs/development/python-modules/pyogrio/default.nix",
+    "version": "0.11.1",
+    "versions": {
+      "master": "0.11.1",
+      "stable": "0.11.1",
+      "unstable": "0.11.1"
+    }
+  },
+  "python314Packages.pyproj": {
+    "broken": false,
+    "description": "Python interface to PROJ library",
+    "homepage": "https://github.com/pyproj4/pyproj",
+    "license": "MIT",
+    "recipe": "pkgs/development/python-modules/pyproj/default.nix",
+    "version": "3.7.2",
+    "versions": {
+      "master": "3.7.2",
+      "stable": "3.7.2",
+      "unstable": "3.7.2"
+    }
+  },
+  "python314Packages.pystac": {
+    "broken": false,
+    "description": "Python library for working with any SpatioTemporal Asset Catalog (STAC)",
+    "homepage": "https://github.com/stac-utils/pystac",
+    "license": "Apache-2.0",
+    "recipe": "pkgs/development/python-modules/pystac/default.nix",
+    "version": "1.14.2",
+    "versions": {
+      "master": "1.14.2",
+      "stable": "1.14.1",
+      "unstable": "1.14.2"
+    }
+  },
+  "python314Packages.pystac-client": {
+    "broken": false,
+    "description": "Python client for working with STAC Catalogs and APIs",
+    "homepage": "https://github.com/stac-utils/pystac-client",
+    "license": "Apache-2.0",
+    "recipe": "pkgs/development/python-modules/pystac-client/default.nix",
+    "version": "0.9.0",
+    "versions": {
+      "master": "0.9.0",
+      "stable": "0.9.0",
+      "unstable": "0.9.0"
+    }
+  },
+  "python314Packages.python-mapnik": {
+    "broken": true,
+    "description": "Python bindings for Mapnik",
+    "homepage": "https://mapnik.org",
+    "license": "LGPL-2.1-or-later",
+    "recipe": "pkgs/development/python-modules/python-mapnik/default.nix",
+    "version": "4.1.3.unstable-2025-09-25",
+    "versions": {
+      "master": "4.1.3.unstable-2025-09-25",
+      "stable": "4.1.3.unstable-2025-09-25",
+      "unstable": "4.1.3.unstable-2025-09-25"
+    }
+  },
+  "python314Packages.rasterio": {
+    "broken": false,
+    "description": "Python package to read and write geospatial raster data",
+    "homepage": "https://rasterio.readthedocs.io/",
+    "license": "BSD-3-Clause",
+    "recipe": "pkgs/development/python-modules/rasterio/default.nix",
+    "version": "1.4.4",
+    "versions": {
+      "master": "1.4.4",
+      "stable": "1.4.3",
+      "unstable": "1.4.4"
+    }
+  },
+  "python314Packages.rio-tiler": {
+    "broken": true,
+    "description": "User friendly Rasterio plugin to read raster datasets",
+    "homepage": "https://cogeotiff.github.io/rio-tiler/",
+    "license": "BSD-3-Clause",
+    "recipe": "pkgs/development/python-modules/rio-tiler/default.nix",
+    "version": "7.8.1",
+    "versions": {
+      "master": "7.8.1",
+      "stable": "7.8.1",
+      "unstable": "7.8.1"
+    }
+  },
+  "python314Packages.rioxarray": {
+    "broken": false,
+    "description": "Geospatial xarray extension powered by rasterio",
+    "homepage": "https://corteva.github.io/rioxarray/",
+    "license": "Apache-2.0",
+    "recipe": "pkgs/development/python-modules/rioxarray/default.nix",
+    "version": "0.20.0",
+    "versions": {
+      "master": "0.20.0",
+      "stable": "0.20.0",
+      "unstable": "0.20.0"
+    }
+  },
+  "python314Packages.rtree": {
+    "broken": false,
+    "description": "R-Tree spatial index for Python GIS",
+    "homepage": "https://github.com/Toblerity/rtree",
+    "license": "MIT",
+    "recipe": "pkgs/development/python-modules/rtree/default.nix",
+    "version": "1.4.1",
+    "versions": {
+      "master": "1.4.1",
+      "stable": "1.4.1",
+      "unstable": "1.4.1"
+    }
+  },
+  "python314Packages.shapely": {
+    "broken": false,
+    "description": "Manipulation and analysis of geometric objects",
+    "homepage": "https://github.com/shapely/shapely",
+    "license": "BSD-3-Clause",
+    "recipe": "pkgs/development/python-modules/shapely/default.nix",
+    "version": "2.1.2",
+    "versions": {
+      "master": "2.1.2",
+      "stable": "2.1.1",
+      "unstable": "2.1.2"
+    }
+  },
+  "python314Packages.xyzservices": {
     "broken": false,
     "description": "Source of XYZ tiles providers",
     "homepage": "https://github.com/geopandas/xyzservices",
