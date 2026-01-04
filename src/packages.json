@@ -61,7 +61,7 @@
     "versions": {
       "master": "3.12.1",
       "stable": "3.11.4",
-      "unstable": "3.12.0"
+      "unstable": "3.12.1"
     }
   },
   "gdalMinimal": {
@@ -74,7 +74,7 @@
     "versions": {
       "master": "3.12.1",
       "stable": "3.11.4",
-      "unstable": "3.12.0"
+      "unstable": "3.12.1"
     }
   },
   "geographiclib": {
@@ -828,7 +828,7 @@
     "versions": {
       "master": "3.12.1",
       "stable": "3.11.4",
-      "unstable": "3.12.0"
+      "unstable": "3.12.1"
     }
   },
   "python313Packages.geoarrow-c": {
@@ -876,9 +876,9 @@
     "homepage": "https://geodatasets.readthedocs.io/",
     "license": "BSD-3-Clause",
     "recipe": "pkgs/development/python-modules/geodatasets/default.nix",
-    "version": "2025.12.1",
+    "version": "2026.1.0",
     "versions": {
-      "master": "2025.12.1",
+      "master": "2026.1.0",
       "stable": "2024.8.0",
       "unstable": "2025.12.1"
     }
@@ -1322,7 +1322,7 @@
     "versions": {
       "master": "3.12.1",
       "stable": "3.11.4",
-      "unstable": "3.12.0"
+      "unstable": "3.12.1"
     }
   },
   "python314Packages.geoarrow-c": {
@@ -1370,9 +1370,9 @@
     "homepage": "https://geodatasets.readthedocs.io/",
     "license": "BSD-3-Clause",
     "recipe": "pkgs/development/python-modules/geodatasets/default.nix",
-    "version": "2025.12.1",
+    "version": "2026.1.0",
     "versions": {
-      "master": "2025.12.1",
+      "master": "2026.1.0",
       "stable": "2024.8.0",
       "unstable": "2025.12.1"
     }
