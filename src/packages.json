@@ -1881,7 +1881,7 @@
     "versions": {
       "master": "1.37.0",
       "stable": "1.36.5",
-      "unstable": "1.36.5"
+      "unstable": "1.37.0"
     }
   },
   "tippecanoe": {
