@@ -1104,6 +1104,19 @@
       "unstable": "0.11.1"
     }
   },
+  "python313Packages.pyotb": {
+    "broken": false,
+    "description": "Python extension of Orfeo Toolbox",
+    "homepage": "https://github.com/orfeotoolbox/pyotb",
+    "license": "Apache-2.0",
+    "recipe": "pkgs/development/python-modules/pyotb/default.nix",
+    "version": "2.1.0",
+    "versions": {
+      "master": "2.1.0",
+      "stable": "2.1.0",
+      "unstable": "2.1.0"
+    }
+  },
   "python313Packages.pyproj": {
     "broken": false,
     "description": "Python interface to PROJ library",
@@ -1596,6 +1609,19 @@
       "master": "0.11.1",
       "stable": "0.11.1",
       "unstable": "0.11.1"
+    }
+  },
+  "python314Packages.pyotb": {
+    "broken": false,
+    "description": "Python extension of Orfeo Toolbox",
+    "homepage": "https://github.com/orfeotoolbox/pyotb",
+    "license": "Apache-2.0",
+    "recipe": "pkgs/development/python-modules/pyotb/default.nix",
+    "version": "2.1.0",
+    "versions": {
+      "master": "2.1.0",
+      "stable": "2.1.0",
+      "unstable": "2.1.0"
     }
   },
   "python314Packages.pyproj": {
