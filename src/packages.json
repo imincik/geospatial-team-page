@@ -223,7 +223,7 @@
   "librttopo": {
     "broken": false,
     "description": "RT Topology Library",
-    "homepage": "https://git.osgeo.org/gitea/rttopo/librttopo",
+    "homepage": "https://git.osgeo.org/rttopo/librttopo",
     "license": "GPL-2.0-or-later",
     "recipe": "pkgs/by-name/li/librttopo/package.nix",
     "version": "1.1.0",
