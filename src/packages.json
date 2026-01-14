@@ -1136,9 +1136,9 @@
     "homepage": "https://github.com/stac-utils/pystac",
     "license": "Apache-2.0",
     "recipe": "pkgs/development/python-modules/pystac/default.nix",
-    "version": "1.14.2",
+    "version": "1.14.3",
     "versions": {
-      "master": "1.14.2",
+      "master": "1.14.3",
       "stable": "1.14.1",
       "unstable": "1.14.2"
     }
@@ -1643,9 +1643,9 @@
     "homepage": "https://github.com/stac-utils/pystac",
     "license": "Apache-2.0",
     "recipe": "pkgs/development/python-modules/pystac/default.nix",
-    "version": "1.14.2",
+    "version": "1.14.3",
     "versions": {
-      "master": "1.14.2",
+      "master": "1.14.3",
       "stable": "1.14.1",
       "unstable": "1.14.2"
     }
