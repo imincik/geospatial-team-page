@@ -1071,9 +1071,9 @@
     "homepage": "https://github.com/GenericMappingTools/pygmt",
     "license": "BSD-3-Clause",
     "recipe": "pkgs/development/python-modules/pygmt/default.nix",
-    "version": "0.17.0",
+    "version": "0.18.0",
     "versions": {
-      "master": "0.17.0",
+      "master": "0.18.0",
       "stable": "0.17.0",
       "unstable": "0.17.0"
     }
@@ -1578,9 +1578,9 @@
     "homepage": "https://github.com/GenericMappingTools/pygmt",
     "license": "BSD-3-Clause",
     "recipe": "pkgs/development/python-modules/pygmt/default.nix",
-    "version": "0.17.0",
+    "version": "0.18.0",
     "versions": {
-      "master": "0.17.0",
+      "master": "0.18.0",
       "stable": "0.17.0",
       "unstable": "0.17.0"
     }
