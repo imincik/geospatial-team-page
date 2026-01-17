@@ -883,6 +883,19 @@
       "unstable": "2026.1.0"
     }
   },
+  "python313Packages.geojson": {
+    "broken": false,
+    "description": "Python bindings and utilities for GeoJSON",
+    "homepage": "https://github.com/jazzband/geojson",
+    "license": "BSD-3-Clause",
+    "recipe": "pkgs/development/python-modules/geojson/default.nix",
+    "version": "3.2.0",
+    "versions": {
+      "master": "3.2.0",
+      "stable": "3.1.0",
+      "unstable": "3.2.0"
+    }
+  },
   "python313Packages.geopandas": {
     "broken": false,
     "description": "Python geospatial data analysis framework",
@@ -1075,7 +1088,7 @@
     "versions": {
       "master": "0.18.0",
       "stable": "0.17.0",
-      "unstable": "0.17.0"
+      "unstable": "0.18.0"
     }
   },
   "python313Packages.pykrige": {
@@ -1140,7 +1153,7 @@
     "versions": {
       "master": "1.14.3",
       "stable": "1.14.1",
-      "unstable": "1.14.2"
+      "unstable": "1.14.3"
     }
   },
   "python313Packages.pystac-client": {
@@ -1390,6 +1403,19 @@
       "unstable": "2026.1.0"
     }
   },
+  "python314Packages.geojson": {
+    "broken": false,
+    "description": "Python bindings and utilities for GeoJSON",
+    "homepage": "https://github.com/jazzband/geojson",
+    "license": "BSD-3-Clause",
+    "recipe": "pkgs/development/python-modules/geojson/default.nix",
+    "version": "3.2.0",
+    "versions": {
+      "master": "3.2.0",
+      "stable": "3.1.0",
+      "unstable": "3.2.0"
+    }
+  },
   "python314Packages.geopandas": {
     "broken": false,
     "description": "Python geospatial data analysis framework",
@@ -1582,7 +1608,7 @@
     "versions": {
       "master": "0.18.0",
       "stable": "0.17.0",
-      "unstable": "0.17.0"
+      "unstable": "0.18.0"
     }
   },
   "python314Packages.pykrige": {
@@ -1647,7 +1673,7 @@
     "versions": {
       "master": "1.14.3",
       "stable": "1.14.1",
-      "unstable": "1.14.2"
+      "unstable": "1.14.3"
     }
   },
   "python314Packages.pystac-client": {
