@@ -200,9 +200,9 @@
     "homepage": "https://osmcode.org/libosmium/",
     "license": "BSL-1.0",
     "recipe": "pkgs/by-name/li/libosmium/package.nix",
-    "version": "2.22.0",
+    "version": "2.23.0",
     "versions": {
-      "master": "2.22.0",
+      "master": "2.23.0",
       "stable": "2.22.0",
       "unstable": "2.22.0"
     }
