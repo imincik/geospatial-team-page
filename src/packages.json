@@ -204,7 +204,7 @@
     "versions": {
       "master": "2.23.0",
       "stable": "2.22.0",
-      "unstable": "2.22.0"
+      "unstable": "2.23.0"
     }
   },
   "librasterlite2": {
