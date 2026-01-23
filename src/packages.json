@@ -1816,7 +1816,7 @@
     "versions": {
       "master": "9.11.1",
       "stable": "9.10.1",
-      "unstable": "9.11.0"
+      "unstable": "9.11.1"
     }
   },
   "sfcgal": {
