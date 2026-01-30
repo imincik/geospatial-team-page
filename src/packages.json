@@ -1786,9 +1786,9 @@
     "homepage": "https://www.qgis.org",
     "license": "GPL-2.0-or-later",
     "recipe": "pkgs/applications/gis/qgis/unwrapped.nix",
-    "version": "3.44.6",
+    "version": "3.44.7",
     "versions": {
-      "master": "3.44.6",
+      "master": "3.44.7",
       "stable": "3.44.4",
       "unstable": "3.44.6"
     }
@@ -1799,9 +1799,9 @@
     "homepage": "https://www.qgis.org",
     "license": "GPL-2.0-or-later",
     "recipe": "pkgs/applications/gis/qgis/unwrapped-ltr.nix",
-    "version": "3.40.14",
+    "version": "3.40.15",
     "versions": {
-      "master": "3.40.14",
+      "master": "3.40.15",
       "stable": "3.40.12",
       "unstable": "3.40.14"
     }
