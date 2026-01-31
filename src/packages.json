@@ -291,9 +291,9 @@
     "homepage": "https://mapnik.org",
     "license": "LGPL-2.1-or-later",
     "recipe": "pkgs/by-name/ma/mapnik/package.nix",
-    "version": "4.2.0",
+    "version": "4.2.1",
     "versions": {
-      "master": "4.2.0",
+      "master": "4.2.1",
       "stable": "4.1.4",
       "unstable": "4.2.0"
     }
