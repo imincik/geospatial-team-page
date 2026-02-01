@@ -1790,7 +1790,7 @@
     "versions": {
       "master": "3.44.7",
       "stable": "3.44.4",
-      "unstable": "3.44.6"
+      "unstable": "3.44.7"
     }
   },
   "qgis-ltr": {
@@ -1803,7 +1803,7 @@
     "versions": {
       "master": "3.40.15",
       "stable": "3.40.12",
-      "unstable": "3.40.14"
+      "unstable": "3.40.15"
     }
   },
   "saga": {
@@ -1955,9 +1955,9 @@
     "homepage": "https://github.com/umap-project/umap/",
     "license": "AGPL-3.0-only",
     "recipe": "pkgs/by-name/um/umap/package.nix",
-    "version": "3.5.0",
+    "version": "3.6.0",
     "versions": {
-      "master": "3.5.0",
+      "master": "3.6.0",
       "stable": "3.4.0",
       "unstable": "3.5.0"
     }
