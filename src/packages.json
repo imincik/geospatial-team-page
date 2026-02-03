@@ -295,7 +295,7 @@
     "versions": {
       "master": "4.2.1",
       "stable": "4.1.4",
-      "unstable": "4.2.0"
+      "unstable": "4.2.1"
     }
   },
   "mapproxy": {
@@ -486,9 +486,9 @@
     "homepage": "https://pgrouting.org/",
     "license": "GPL-2.0-or-later",
     "recipe": "pkgs/servers/sql/postgresql/ext/pgrouting.nix",
-    "version": "4.0.0",
+    "version": "4.0.1",
     "versions": {
-      "master": "4.0.0",
+      "master": "4.0.1",
       "stable": "4.0.0",
       "unstable": "4.0.0"
     }
@@ -525,9 +525,9 @@
     "homepage": "https://pgrouting.org/",
     "license": "GPL-2.0-or-later",
     "recipe": "pkgs/servers/sql/postgresql/ext/pgrouting.nix",
-    "version": "4.0.0",
+    "version": "4.0.1",
     "versions": {
-      "master": "4.0.0",
+      "master": "4.0.1",
       "stable": "4.0.0",
       "unstable": "4.0.0"
     }
@@ -564,9 +564,9 @@
     "homepage": "https://pgrouting.org/",
     "license": "GPL-2.0-or-later",
     "recipe": "pkgs/servers/sql/postgresql/ext/pgrouting.nix",
-    "version": "4.0.0",
+    "version": "4.0.1",
     "versions": {
-      "master": "4.0.0",
+      "master": "4.0.1",
       "stable": "4.0.0",
       "unstable": "4.0.0"
     }
@@ -603,9 +603,9 @@
     "homepage": "https://pgrouting.org/",
     "license": "GPL-2.0-or-later",
     "recipe": "pkgs/servers/sql/postgresql/ext/pgrouting.nix",
-    "version": "4.0.0",
+    "version": "4.0.1",
     "versions": {
-      "master": "4.0.0",
+      "master": "4.0.1",
       "stable": "4.0.0",
       "unstable": "4.0.0"
     }
@@ -642,9 +642,9 @@
     "homepage": "https://pgrouting.org/",
     "license": "GPL-2.0-or-later",
     "recipe": "pkgs/servers/sql/postgresql/ext/pgrouting.nix",
-    "version": "4.0.0",
+    "version": "4.0.1",
     "versions": {
-      "master": "4.0.0",
+      "master": "4.0.1",
       "stable": "4.0.0",
       "unstable": "4.0.0"
     }
@@ -681,9 +681,9 @@
     "homepage": "https://pgrouting.org/",
     "license": "GPL-2.0-or-later",
     "recipe": "pkgs/servers/sql/postgresql/ext/pgrouting.nix",
-    "version": "4.0.0",
+    "version": "4.0.1",
     "versions": {
-      "master": "4.0.0",
+      "master": "4.0.1",
       "stable": "4.0.0",
       "unstable": "4.0.0"
     }
@@ -1959,7 +1959,7 @@
     "versions": {
       "master": "3.6.0",
       "stable": "3.4.0",
-      "unstable": "3.5.0"
+      "unstable": "3.6.0"
     }
   },
   "whitebox-tools": {
