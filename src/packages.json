@@ -490,7 +490,7 @@
     "versions": {
       "master": "4.0.1",
       "stable": "4.0.0",
-      "unstable": "4.0.0"
+      "unstable": "4.0.1"
     }
   },
   "postgresql14Packages.pointcloud": {
@@ -529,7 +529,7 @@
     "versions": {
       "master": "4.0.1",
       "stable": "4.0.0",
-      "unstable": "4.0.0"
+      "unstable": "4.0.1"
     }
   },
   "postgresql15Packages.pointcloud": {
@@ -568,7 +568,7 @@
     "versions": {
       "master": "4.0.1",
       "stable": "4.0.0",
-      "unstable": "4.0.0"
+      "unstable": "4.0.1"
     }
   },
   "postgresql16Packages.pointcloud": {
@@ -607,7 +607,7 @@
     "versions": {
       "master": "4.0.1",
       "stable": "4.0.0",
-      "unstable": "4.0.0"
+      "unstable": "4.0.1"
     }
   },
   "postgresql17Packages.pointcloud": {
@@ -646,7 +646,7 @@
     "versions": {
       "master": "4.0.1",
       "stable": "4.0.0",
-      "unstable": "4.0.0"
+      "unstable": "4.0.1"
     }
   },
   "postgresql18Packages.pointcloud": {
@@ -685,7 +685,7 @@
     "versions": {
       "master": "4.0.1",
       "stable": "4.0.0",
-      "unstable": "4.0.0"
+      "unstable": "4.0.1"
     }
   },
   "postgresqlPackages.pointcloud": {
