@@ -740,6 +740,19 @@
       "unstable": "1.8.1"
     }
   },
+  "py3dtiles": {
+    "broken": false,
+    "description": "Python module to manage 3DTiles format",
+    "homepage": "https://py3dtiles.org",
+    "license": "Apache-2.0",
+    "recipe": "pkgs/development/python-modules/py3dtiles/default.nix",
+    "version": "12.0.0",
+    "versions": {
+      "master": "12.0.0",
+      "stable": "",
+      "unstable": ""
+    }
+  },
   "python313Packages.basemap": {
     "broken": false,
     "description": "Plot data on map projections with matplotlib",
@@ -1076,6 +1089,19 @@
       "master": "0.3.0",
       "stable": "0.3.0",
       "unstable": "0.3.0"
+    }
+  },
+  "python313Packages.py3dtiles": {
+    "broken": false,
+    "description": "Python module to manage 3DTiles format",
+    "homepage": "https://py3dtiles.org",
+    "license": "Apache-2.0",
+    "recipe": "pkgs/development/python-modules/py3dtiles/default.nix",
+    "version": "12.0.0",
+    "versions": {
+      "master": "12.0.0",
+      "stable": "",
+      "unstable": ""
     }
   },
   "python313Packages.pygmt": {
@@ -1596,6 +1622,19 @@
       "master": "0.3.0",
       "stable": "0.3.0",
       "unstable": "0.3.0"
+    }
+  },
+  "python314Packages.py3dtiles": {
+    "broken": false,
+    "description": "Python module to manage 3DTiles format",
+    "homepage": "https://py3dtiles.org",
+    "license": "Apache-2.0",
+    "recipe": "pkgs/development/python-modules/py3dtiles/default.nix",
+    "version": "12.0.0",
+    "versions": {
+      "master": "12.0.0",
+      "stable": "",
+      "unstable": ""
     }
   },
   "python314Packages.pygmt": {
