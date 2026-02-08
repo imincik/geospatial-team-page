@@ -1994,9 +1994,9 @@
     "homepage": "https://github.com/umap-project/umap/",
     "license": "AGPL-3.0-only",
     "recipe": "pkgs/by-name/um/umap/package.nix",
-    "version": "3.6.0",
+    "version": "3.6.1",
     "versions": {
-      "master": "3.6.0",
+      "master": "3.6.1",
       "stable": "3.4.0",
       "unstable": "3.6.0"
     }
