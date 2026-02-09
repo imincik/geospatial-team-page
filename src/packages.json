@@ -477,7 +477,7 @@
     "versions": {
       "master": "1.30.0",
       "stable": "1.28.2",
-      "unstable": "1.29.1"
+      "unstable": "1.30.0"
     }
   },
   "postgresql14Packages.pgrouting": {
@@ -750,7 +750,7 @@
     "versions": {
       "master": "12.0.0",
       "stable": "",
-      "unstable": ""
+      "unstable": "12.0.0"
     }
   },
   "python313Packages.basemap": {
@@ -1101,7 +1101,7 @@
     "versions": {
       "master": "12.0.0",
       "stable": "",
-      "unstable": ""
+      "unstable": "12.0.0"
     }
   },
   "python313Packages.pygmt": {
@@ -1634,7 +1634,7 @@
     "versions": {
       "master": "12.0.0",
       "stable": "",
-      "unstable": ""
+      "unstable": "12.0.0"
     }
   },
   "python314Packages.pygmt": {
@@ -1998,7 +1998,7 @@
     "versions": {
       "master": "3.6.1",
       "stable": "3.4.0",
-      "unstable": "3.6.0"
+      "unstable": "3.6.1"
     }
   },
   "whitebox-tools": {
