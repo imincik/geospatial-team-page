@@ -4,7 +4,7 @@
     "description": "Software for rapid LiDAR processing",
     "homepage": "http://lastools.org/",
     "license": "unfree",
-    "recipe": "pkgs/by-name/la/LAStools/package.nix",
+    "recipe": "pkgs/by-name/la/lastools/package.nix",
     "version": "2.0.4",
     "versions": {
       "master": "2.0.4",
@@ -168,12 +168,25 @@
       "unstable": "5.1.1"
     }
   },
+  "lastools": {
+    "broken": false,
+    "description": "Software for rapid LiDAR processing",
+    "homepage": "http://lastools.org/",
+    "license": "unfree",
+    "recipe": "pkgs/by-name/la/lastools/package.nix",
+    "version": "2.0.4",
+    "versions": {
+      "master": "2.0.4",
+      "stable": "",
+      "unstable": ""
+    }
+  },
   "libLAS": {
     "broken": false,
     "description": "LAS 1.0/1.1/1.2 ASPRS LiDAR data translation toolset",
     "homepage": "https://liblas.org",
     "license": "BSD-3-Clause",
-    "recipe": "pkgs/by-name/li/libLAS/package.nix",
+    "recipe": "pkgs/by-name/li/liblas/package.nix",
     "version": "1.8.1",
     "versions": {
       "master": "1.8.1",
@@ -192,6 +205,19 @@
       "master": "1.7.4",
       "stable": "1.7.4",
       "unstable": "1.7.4"
+    }
+  },
+  "liblas": {
+    "broken": false,
+    "description": "LAS 1.0/1.1/1.2 ASPRS LiDAR data translation toolset",
+    "homepage": "https://liblas.org",
+    "license": "BSD-3-Clause",
+    "recipe": "pkgs/by-name/li/liblas/package.nix",
+    "version": "1.8.1",
+    "versions": {
+      "master": "1.8.1",
+      "stable": "",
+      "unstable": ""
     }
   },
   "libosmium": {
@@ -1169,6 +1195,19 @@
       "unstable": "3.7.2"
     }
   },
+  "python313Packages.pysfcgal": {
+    "broken": false,
+    "description": "Python wrapper for SFCGAL",
+    "homepage": "https://gitlab.com/sfcgal/pysfcgal",
+    "license": "GPL-3.0-or-later",
+    "recipe": "pkgs/development/python-modules/pysfcgal/default.nix",
+    "version": "2.2.0",
+    "versions": {
+      "master": "2.2.0",
+      "stable": "",
+      "unstable": ""
+    }
+  },
   "python313Packages.pystac": {
     "broken": false,
     "description": "Python library for working with any SpatioTemporal Asset Catalog (STAC)",
@@ -1700,6 +1739,19 @@
       "master": "3.7.2",
       "stable": "3.7.2",
       "unstable": "3.7.2"
+    }
+  },
+  "python314Packages.pysfcgal": {
+    "broken": false,
+    "description": "Python wrapper for SFCGAL",
+    "homepage": "https://gitlab.com/sfcgal/pysfcgal",
+    "license": "GPL-3.0-or-later",
+    "recipe": "pkgs/development/python-modules/pysfcgal/default.nix",
+    "version": "2.2.0",
+    "versions": {
+      "master": "2.2.0",
+      "stable": "",
+      "unstable": ""
     }
   },
   "python314Packages.pystac": {
