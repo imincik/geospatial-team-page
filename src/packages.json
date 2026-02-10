@@ -1981,9 +1981,9 @@
     "homepage": "https://github.com/eclipse/sumo",
     "license": "EPL-2.0",
     "recipe": "pkgs/by-name/su/sumo/package.nix",
-    "version": "1.25.0",
+    "version": "1.26.0",
     "versions": {
-      "master": "1.25.0",
+      "master": "1.26.0",
       "stable": "1.24.0",
       "unstable": "1.25.0"
     }
