@@ -1876,7 +1876,7 @@
     "description": "Free and Open Source Geographic Information System",
     "homepage": "https://www.qgis.org",
     "license": "GPL-2.0-or-later",
-    "recipe": "pkgs/applications/gis/qgis/unwrapped.nix",
+    "recipe": "pkgs/applications/gis/qgis/default.nix",
     "version": "3.44.7",
     "versions": {
       "master": "3.44.7",
@@ -1889,7 +1889,7 @@
     "description": "Free and Open Source Geographic Information System",
     "homepage": "https://www.qgis.org",
     "license": "GPL-2.0-or-later",
-    "recipe": "pkgs/applications/gis/qgis/unwrapped-ltr.nix",
+    "recipe": "pkgs/applications/gis/qgis/ltr.nix",
     "version": "3.40.15",
     "versions": {
       "master": "3.40.15",
