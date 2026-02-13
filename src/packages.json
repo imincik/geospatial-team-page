@@ -61,7 +61,7 @@
     "versions": {
       "master": "3.12.2",
       "stable": "3.11.4",
-      "unstable": "3.12.1"
+      "unstable": "3.12.2"
     }
   },
   "gdalMinimal": {
@@ -74,7 +74,7 @@
     "versions": {
       "master": "3.12.2",
       "stable": "3.11.4",
-      "unstable": "3.12.1"
+      "unstable": "3.12.2"
     }
   },
   "geographiclib": {
@@ -178,7 +178,7 @@
     "versions": {
       "master": "2.0.4",
       "stable": "",
-      "unstable": ""
+      "unstable": "2.0.4"
     }
   },
   "libLAS": {
@@ -217,7 +217,7 @@
     "versions": {
       "master": "1.8.1",
       "stable": "",
-      "unstable": ""
+      "unstable": "1.8.1"
     }
   },
   "libosmium": {
@@ -867,7 +867,7 @@
     "versions": {
       "master": "3.12.2",
       "stable": "3.11.4",
-      "unstable": "3.12.1"
+      "unstable": "3.12.2"
     }
   },
   "python313Packages.geoarrow-c": {
@@ -1205,7 +1205,7 @@
     "versions": {
       "master": "2.2.0",
       "stable": "",
-      "unstable": ""
+      "unstable": "2.2.0"
     }
   },
   "python313Packages.pystac": {
@@ -1413,7 +1413,7 @@
     "versions": {
       "master": "3.12.2",
       "stable": "3.11.4",
-      "unstable": "3.12.1"
+      "unstable": "3.12.2"
     }
   },
   "python314Packages.geoarrow-c": {
@@ -1751,7 +1751,7 @@
     "versions": {
       "master": "2.2.0",
       "stable": "",
-      "unstable": ""
+      "unstable": "2.2.0"
     }
   },
   "python314Packages.pystac": {
@@ -1985,7 +1985,7 @@
     "versions": {
       "master": "1.26.0",
       "stable": "1.24.0",
-      "unstable": "1.25.0"
+      "unstable": "1.26.0"
     }
   },
   "t-rex": {
