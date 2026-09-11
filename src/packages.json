@@ -18,9 +18,9 @@
     "homepage": "https://cloudcompare.org",
     "license": "GPL-2.0-or-later",
     "recipe": "pkgs/by-name/cl/cloudcompare/package.nix",
-    "version": "2.13.2",
+    "version": "2.13.2-unstable-2026-08-21",
     "versions": {
-      "master": "2.13.2",
+      "master": "2.13.2-unstable-2026-08-21",
       "stable": "2.13.2",
       "unstable": "2.13.2"
     }
