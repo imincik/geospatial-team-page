@@ -22,7 +22,7 @@
     "versions": {
       "master": "2.13.2-unstable-2026-08-21",
       "stable": "2.13.2",
-      "unstable": "2.13.2"
+      "unstable": "2.13.2-unstable-2026-08-21"
     }
   },
   "dcw-gmt": {
@@ -87,7 +87,7 @@
     "versions": {
       "master": "3.13.3",
       "stable": "3.12.4",
-      "unstable": "3.13.2"
+      "unstable": "3.13.3"
     }
   },
   "gdalMinimal": {
@@ -100,7 +100,7 @@
     "versions": {
       "master": "3.13.3",
       "stable": "3.12.4",
-      "unstable": "3.13.2"
+      "unstable": "3.13.3"
     }
   },
   "geographiclib": {
@@ -1023,7 +1023,7 @@
     "versions": {
       "master": "3.13.3",
       "stable": "3.12.4",
-      "unstable": "3.13.2"
+      "unstable": "3.13.3"
     }
   },
   "python313Packages.geoarrow-c": {
@@ -1513,9 +1513,9 @@
     "homepage": "https://github.com/StacLabs/stac-validator",
     "license": "Apache-2.0",
     "recipe": "pkgs/development/python-modules/stac-validator/default.nix",
-    "version": "4.4.0",
+    "version": "4.6.1",
     "versions": {
-      "master": "4.4.0",
+      "master": "4.6.1",
       "stable": "4.1.0",
       "unstable": "4.4.0"
     }
@@ -1673,7 +1673,7 @@
     "versions": {
       "master": "3.13.3",
       "stable": "3.12.4",
-      "unstable": "3.13.2"
+      "unstable": "3.13.3"
     }
   },
   "python314Packages.geoarrow-c": {
@@ -2163,9 +2163,9 @@
     "homepage": "https://github.com/StacLabs/stac-validator",
     "license": "Apache-2.0",
     "recipe": "pkgs/development/python-modules/stac-validator/default.nix",
-    "version": "4.4.0",
+    "version": "4.6.1",
     "versions": {
-      "master": "4.4.0",
+      "master": "4.6.1",
       "stable": "4.1.0",
       "unstable": "4.4.0"
     }
@@ -2293,9 +2293,9 @@
     "homepage": "https://github.com/StacLabs/stac-validator",
     "license": "Apache-2.0",
     "recipe": "pkgs/development/python-modules/stac-validator/default.nix",
-    "version": "4.4.0",
+    "version": "4.6.1",
     "versions": {
-      "master": "4.4.0",
+      "master": "4.6.1",
       "stable": "4.1.0",
       "unstable": "4.4.0"
     }
