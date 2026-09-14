@@ -399,7 +399,7 @@
     "versions": {
       "master": "1.16.1",
       "stable": "1.9.1",
-      "unstable": "1.14.0"
+      "unstable": "1.16.1"
     }
   },
   "mbtileserver": {
@@ -1040,7 +1040,7 @@
     }
   },
   "python313Packages.geoarrow-pandas": {
-    "broken": true,
+    "broken": false,
     "description": "Python implementation of the GeoArrow specification",
     "homepage": "https://github.com/geoarrow/geoarrow-python",
     "license": "Apache-2.0",
@@ -1430,7 +1430,7 @@
     }
   },
   "python313Packages.python-mapnik": {
-    "broken": true,
+    "broken": false,
     "description": "Python bindings for Mapnik",
     "homepage": "https://mapnik.org",
     "license": "LGPL-2.1-or-later",
@@ -1517,7 +1517,7 @@
     "versions": {
       "master": "4.6.1",
       "stable": "4.1.0",
-      "unstable": "4.4.0"
+      "unstable": "4.6.1"
     }
   },
   "python313Packages.streamlit-folium": {
@@ -1690,7 +1690,7 @@
     }
   },
   "python314Packages.geoarrow-pandas": {
-    "broken": true,
+    "broken": false,
     "description": "Python implementation of the GeoArrow specification",
     "homepage": "https://github.com/geoarrow/geoarrow-python",
     "license": "Apache-2.0",
@@ -2080,7 +2080,7 @@
     }
   },
   "python314Packages.python-mapnik": {
-    "broken": true,
+    "broken": false,
     "description": "Python bindings for Mapnik",
     "homepage": "https://mapnik.org",
     "license": "LGPL-2.1-or-later",
@@ -2167,7 +2167,7 @@
     "versions": {
       "master": "4.6.1",
       "stable": "4.1.0",
-      "unstable": "4.4.0"
+      "unstable": "4.6.1"
     }
   },
   "python314Packages.streamlit-folium": {
@@ -2219,7 +2219,7 @@
     "versions": {
       "master": "3.44.14",
       "stable": "3.44.12",
-      "unstable": "3.44.12"
+      "unstable": "3.44.14"
     }
   },
   "saga": {
@@ -2297,7 +2297,7 @@
     "versions": {
       "master": "4.6.1",
       "stable": "4.1.0",
-      "unstable": "4.4.0"
+      "unstable": "4.6.1"
     }
   },
   "sumo": {
@@ -2314,7 +2314,7 @@
     }
   },
   "t-rex": {
-    "broken": true,
+    "broken": false,
     "description": "Vector tile server specialized on publishing MVT tiles",
     "homepage": "https://t-rex.tileserver.ch/",
     "license": "MIT",
