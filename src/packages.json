@@ -590,9 +590,9 @@
     "homepage": "https://pgrouting.org/",
     "license": "GPL-2.0-or-later",
     "recipe": "pkgs/servers/sql/postgresql/ext/pgrouting.nix",
-    "version": "4.0.1",
+    "version": "4.0.2",
     "versions": {
-      "master": "4.0.1",
+      "master": "4.0.2",
       "stable": "4.0.1",
       "unstable": "4.0.1"
     }
@@ -629,9 +629,9 @@
     "homepage": "https://pgrouting.org/",
     "license": "GPL-2.0-or-later",
     "recipe": "pkgs/servers/sql/postgresql/ext/pgrouting.nix",
-    "version": "4.0.1",
+    "version": "4.0.2",
     "versions": {
-      "master": "4.0.1",
+      "master": "4.0.2",
       "stable": "4.0.1",
       "unstable": "4.0.1"
     }
@@ -668,9 +668,9 @@
     "homepage": "https://pgrouting.org/",
     "license": "GPL-2.0-or-later",
     "recipe": "pkgs/servers/sql/postgresql/ext/pgrouting.nix",
-    "version": "4.0.1",
+    "version": "4.0.2",
     "versions": {
-      "master": "4.0.1",
+      "master": "4.0.2",
       "stable": "4.0.1",
       "unstable": "4.0.1"
     }
@@ -707,9 +707,9 @@
     "homepage": "https://pgrouting.org/",
     "license": "GPL-2.0-or-later",
     "recipe": "pkgs/servers/sql/postgresql/ext/pgrouting.nix",
-    "version": "4.0.1",
+    "version": "4.0.2",
     "versions": {
-      "master": "4.0.1",
+      "master": "4.0.2",
       "stable": "4.0.1",
       "unstable": "4.0.1"
     }
@@ -746,9 +746,9 @@
     "homepage": "https://pgrouting.org/",
     "license": "GPL-2.0-or-later",
     "recipe": "pkgs/servers/sql/postgresql/ext/pgrouting.nix",
-    "version": "4.0.1",
+    "version": "4.0.2",
     "versions": {
-      "master": "4.0.1",
+      "master": "4.0.2",
       "stable": "4.0.1",
       "unstable": "4.0.1"
     }
@@ -785,9 +785,9 @@
     "homepage": "https://pgrouting.org/",
     "license": "GPL-2.0-or-later",
     "recipe": "pkgs/servers/sql/postgresql/ext/pgrouting.nix",
-    "version": "4.0.1",
+    "version": "4.0.2",
     "versions": {
-      "master": "4.0.1",
+      "master": "4.0.2",
       "stable": "",
       "unstable": "4.0.1"
     }
@@ -824,9 +824,9 @@
     "homepage": "https://pgrouting.org/",
     "license": "GPL-2.0-or-later",
     "recipe": "pkgs/servers/sql/postgresql/ext/pgrouting.nix",
-    "version": "4.0.1",
+    "version": "4.0.2",
     "versions": {
-      "master": "4.0.1",
+      "master": "4.0.2",
       "stable": "4.0.1",
       "unstable": "4.0.1"
     }
