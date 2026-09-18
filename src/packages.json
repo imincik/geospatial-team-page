@@ -863,9 +863,9 @@
     "homepage": "https://proj.org/",
     "license": "MIT",
     "recipe": "pkgs/by-name/pr/proj/package.nix",
-    "version": "9.8.1",
+    "version": "9.9.0",
     "versions": {
-      "master": "9.8.1",
+      "master": "9.9.0",
       "stable": "9.8.1",
       "unstable": "9.8.1"
     }
@@ -1383,9 +1383,9 @@
     "homepage": "https://github.com/pyproj4/pyproj",
     "license": "MIT",
     "recipe": "pkgs/development/python-modules/pyproj/default.nix",
-    "version": "3.7.2",
+    "version": "3.8.0",
     "versions": {
-      "master": "3.7.2",
+      "master": "3.8.0",
       "stable": "3.7.2",
       "unstable": "3.7.2"
     }
@@ -2033,9 +2033,9 @@
     "homepage": "https://github.com/pyproj4/pyproj",
     "license": "MIT",
     "recipe": "pkgs/development/python-modules/pyproj/default.nix",
-    "version": "3.7.2",
+    "version": "3.8.0",
     "versions": {
-      "master": "3.7.2",
+      "master": "3.8.0",
       "stable": "3.7.2",
       "unstable": "3.7.2"
     }
