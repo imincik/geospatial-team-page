@@ -867,7 +867,7 @@
     "versions": {
       "master": "9.9.0",
       "stable": "9.8.1",
-      "unstable": "9.8.1"
+      "unstable": "9.9.0"
     }
   },
   "protozero": {
@@ -1387,7 +1387,7 @@
     "versions": {
       "master": "3.8.0",
       "stable": "3.7.2",
-      "unstable": "3.7.2"
+      "unstable": "3.8.0"
     }
   },
   "python313Packages.pysfcgal": {
@@ -1465,7 +1465,7 @@
     "versions": {
       "master": "9.4.6",
       "stable": "9.0.6",
-      "unstable": "9.4.3"
+      "unstable": "9.4.6"
     }
   },
   "python313Packages.rioxarray": {
@@ -2037,7 +2037,7 @@
     "versions": {
       "master": "3.8.0",
       "stable": "3.7.2",
-      "unstable": "3.7.2"
+      "unstable": "3.8.0"
     }
   },
   "python314Packages.pysfcgal": {
@@ -2115,7 +2115,7 @@
     "versions": {
       "master": "9.4.6",
       "stable": "9.0.6",
-      "unstable": "9.4.3"
+      "unstable": "9.4.6"
     }
   },
   "python314Packages.rioxarray": {
