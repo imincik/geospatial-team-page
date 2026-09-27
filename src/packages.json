@@ -1205,7 +1205,7 @@
     "versions": {
       "master": "7.1.0",
       "stable": "7.0.3",
-      "unstable": "7.0.3"
+      "unstable": "7.1.0"
     }
   },
   "python313Packages.nominatim": {
@@ -1855,7 +1855,7 @@
     "versions": {
       "master": "7.1.0",
       "stable": "7.0.3",
-      "unstable": "7.0.3"
+      "unstable": "7.1.0"
     }
   },
   "python314Packages.nominatim": {
