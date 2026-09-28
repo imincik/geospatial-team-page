@@ -2202,9 +2202,9 @@
     "homepage": "https://www.qgis.org",
     "license": "GPL-2.0-or-later",
     "recipe": "pkgs/applications/gis/qgis/unwrapped.nix",
-    "version": "4.2.1",
+    "version": "4.2.2",
     "versions": {
-      "master": "4.2.1",
+      "master": "4.2.2",
       "stable": "4.0.3",
       "unstable": "4.2.1"
     }
@@ -2388,7 +2388,7 @@
     "versions": {
       "master": "3.8.1",
       "stable": "3.7.3",
-      "unstable": "3.7.3"
+      "unstable": "3.8.1"
     }
   },
   "whitebox-tools": {
