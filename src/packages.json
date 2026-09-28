@@ -2316,7 +2316,7 @@
   "t-rex": {
     "broken": false,
     "description": "Vector tile server specialized on publishing MVT tiles",
-    "homepage": "https://t-rex.tileserver.ch/",
+    "homepage": "https://t-rex.bbox.earth/",
     "license": "MIT",
     "recipe": "pkgs/by-name/t-/t-rex/package.nix",
     "version": "0.15.0-alpha3",
@@ -2384,9 +2384,9 @@
     "homepage": "https://github.com/umap-project/umap/",
     "license": "AGPL-3.0-only",
     "recipe": "pkgs/by-name/um/umap/package.nix",
-    "version": "3.7.3",
+    "version": "3.8.1",
     "versions": {
-      "master": "3.7.3",
+      "master": "3.8.1",
       "stable": "3.7.3",
       "unstable": "3.7.3"
     }
