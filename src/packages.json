@@ -1465,7 +1465,7 @@
     "versions": {
       "master": "9.4.7",
       "stable": "9.0.6",
-      "unstable": "9.4.6"
+      "unstable": "9.4.7"
     }
   },
   "python313Packages.rioxarray": {
@@ -2115,7 +2115,7 @@
     "versions": {
       "master": "9.4.7",
       "stable": "9.0.6",
-      "unstable": "9.4.6"
+      "unstable": "9.4.7"
     }
   },
   "python314Packages.rioxarray": {
@@ -2206,7 +2206,7 @@
     "versions": {
       "master": "4.2.2",
       "stable": "4.0.3",
-      "unstable": "4.2.1"
+      "unstable": "4.2.2"
     }
   },
   "qgis-ltr": {
