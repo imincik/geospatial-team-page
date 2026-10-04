@@ -360,7 +360,7 @@
     "versions": {
       "master": "4.3.2",
       "stable": "4.2.2",
-      "unstable": "4.3.0"
+      "unstable": "4.3.2"
     }
   },
   "mapproxy": {
