@@ -497,7 +497,7 @@
     "broken": false,
     "description": "Multipurpose command line tool for working with OpenStreetMap data based on the Osmium library",
     "homepage": "https://osmcode.org/osmium-tool/",
-    "license": "GPL-3.0-or-later, MIT, BSD-3-Clause",
+    "license": "GPL-3.0-or-later",
     "recipe": "pkgs/by-name/os/osmium-tool/package.nix",
     "version": "1.19.1",
     "versions": {
@@ -2228,9 +2228,9 @@
     "homepage": "https://saga-gis.sourceforge.io",
     "license": "GPL-2.0-or-later",
     "recipe": "pkgs/by-name/sa/saga/package.nix",
-    "version": "9.13.0",
+    "version": "9.13.1",
     "versions": {
-      "master": "9.13.0",
+      "master": "9.13.1",
       "stable": "9.12.3",
       "unstable": "9.13.0"
     }
