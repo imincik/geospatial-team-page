@@ -2232,7 +2232,7 @@
     "versions": {
       "master": "9.13.1",
       "stable": "9.12.3",
-      "unstable": "9.13.0"
+      "unstable": "9.13.1"
     }
   },
   "sfcgal": {
@@ -2306,9 +2306,9 @@
     "homepage": "https://github.com/eclipse/sumo",
     "license": "EPL-2.0",
     "recipe": "pkgs/by-name/su/sumo/package.nix",
-    "version": "1.27.1",
+    "version": "1.28.0",
     "versions": {
-      "master": "1.27.1",
+      "master": "1.28.0",
       "stable": "1.27.1",
       "unstable": "1.27.1"
     }
