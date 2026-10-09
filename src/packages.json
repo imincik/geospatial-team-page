@@ -148,9 +148,9 @@
     "homepage": "https://www.graphhopper.com/",
     "license": "Apache-2.0",
     "recipe": "pkgs/by-name/gr/graphhopper/package.nix",
-    "version": "11.0",
+    "version": "11.1",
     "versions": {
-      "master": "11.0",
+      "master": "11.1",
       "stable": "11.0",
       "unstable": "11.0"
     }
@@ -1097,9 +1097,9 @@
     "homepage": "https://github.com/developmentseed/geojson-pydantic",
     "license": "MIT",
     "recipe": "pkgs/development/python-modules/geojson-pydantic/default.nix",
-    "version": "2.1.1",
+    "version": "2.2.0",
     "versions": {
-      "master": "2.1.1",
+      "master": "2.2.0",
       "stable": "",
       "unstable": ""
     }
@@ -1760,9 +1760,9 @@
     "homepage": "https://github.com/developmentseed/geojson-pydantic",
     "license": "MIT",
     "recipe": "pkgs/development/python-modules/geojson-pydantic/default.nix",
-    "version": "2.1.1",
+    "version": "2.2.0",
     "versions": {
-      "master": "2.1.1",
+      "master": "2.2.0",
       "stable": "",
       "unstable": ""
     }
