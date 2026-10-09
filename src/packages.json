@@ -1091,6 +1091,19 @@
       "unstable": "3.3.0"
     }
   },
+  "python313Packages.geojson-pydantic": {
+    "broken": false,
+    "description": "Suite of Pydantic models matching the GeoJSON specification RFC 7946",
+    "homepage": "https://github.com/developmentseed/geojson-pydantic",
+    "license": "MIT",
+    "recipe": "pkgs/development/python-modules/geojson-pydantic/default.nix",
+    "version": "2.1.1",
+    "versions": {
+      "master": "2.1.1",
+      "stable": "",
+      "unstable": ""
+    }
+  },
   "python313Packages.geopandas": {
     "broken": false,
     "description": "Python geospatial data analysis framework",
@@ -1739,6 +1752,19 @@
       "master": "3.3.0",
       "stable": "3.2.0",
       "unstable": "3.3.0"
+    }
+  },
+  "python314Packages.geojson-pydantic": {
+    "broken": false,
+    "description": "Suite of Pydantic models matching the GeoJSON specification RFC 7946",
+    "homepage": "https://github.com/developmentseed/geojson-pydantic",
+    "license": "MIT",
+    "recipe": "pkgs/development/python-modules/geojson-pydantic/default.nix",
+    "version": "2.1.1",
+    "versions": {
+      "master": "2.1.1",
+      "stable": "",
+      "unstable": ""
     }
   },
   "python314Packages.geopandas": {
