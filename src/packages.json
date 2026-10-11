@@ -152,7 +152,7 @@
     "versions": {
       "master": "11.1",
       "stable": "11.0",
-      "unstable": "11.0"
+      "unstable": "11.1"
     }
   },
   "grass": {
@@ -1101,7 +1101,7 @@
     "versions": {
       "master": "2.2.0",
       "stable": "",
-      "unstable": ""
+      "unstable": "2.2.0"
     }
   },
   "python313Packages.geopandas": {
@@ -1764,7 +1764,7 @@
     "versions": {
       "master": "2.2.0",
       "stable": "",
-      "unstable": ""
+      "unstable": "2.2.0"
     }
   },
   "python314Packages.geopandas": {
@@ -2336,7 +2336,7 @@
     "versions": {
       "master": "1.28.0",
       "stable": "1.27.1",
-      "unstable": "1.27.1"
+      "unstable": "1.28.0"
     }
   },
   "t-rex": {
