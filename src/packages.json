@@ -187,9 +187,9 @@
     "homepage": "https://codeberg.org/dunj3/hittekaart",
     "license": "GPL-3.0-or-later",
     "recipe": "pkgs/by-name/hi/hittekaart/package.nix",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "versions": {
-      "master": "0.2.0",
+      "master": "0.2.1",
       "stable": "0.2.0",
       "unstable": "0.2.0"
     }
