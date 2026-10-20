@@ -594,7 +594,7 @@
     "versions": {
       "master": "1.1.9",
       "stable": "",
-      "unstable": ""
+      "unstable": "1.1.9"
     }
   },
   "postgresql14Packages.pgrouting": {
@@ -646,7 +646,7 @@
     "versions": {
       "master": "1.1.9",
       "stable": "",
-      "unstable": ""
+      "unstable": "1.1.9"
     }
   },
   "postgresql15Packages.pgrouting": {
@@ -698,7 +698,7 @@
     "versions": {
       "master": "1.1.9",
       "stable": "",
-      "unstable": ""
+      "unstable": "1.1.9"
     }
   },
   "postgresql16Packages.pgrouting": {
@@ -750,7 +750,7 @@
     "versions": {
       "master": "1.1.9",
       "stable": "",
-      "unstable": ""
+      "unstable": "1.1.9"
     }
   },
   "postgresql17Packages.pgrouting": {
@@ -802,7 +802,7 @@
     "versions": {
       "master": "1.1.9",
       "stable": "",
-      "unstable": ""
+      "unstable": "1.1.9"
     }
   },
   "postgresql18Packages.pgrouting": {
@@ -854,7 +854,7 @@
     "versions": {
       "master": "1.1.9",
       "stable": "",
-      "unstable": ""
+      "unstable": "1.1.9"
     }
   },
   "postgresql19Packages.pgrouting": {
@@ -906,7 +906,7 @@
     "versions": {
       "master": "1.1.9",
       "stable": "",
-      "unstable": ""
+      "unstable": "1.1.9"
     }
   },
   "postgresqlPackages.pgrouting": {
