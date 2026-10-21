@@ -451,7 +451,7 @@
     "versions": {
       "master": "5.3.3",
       "stable": "5.3.2",
-      "unstable": "5.3.2"
+      "unstable": "5.3.3"
     }
   },
   "nominatim-ui": {
@@ -2349,7 +2349,7 @@
     "versions": {
       "master": "9.14.0",
       "stable": "9.12.3",
-      "unstable": "9.13.1"
+      "unstable": "9.14.0"
     }
   },
   "sfcgal": {
