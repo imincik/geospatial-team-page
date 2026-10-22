@@ -525,9 +525,9 @@
     "homepage": "https://www.orfeo-toolbox.org/",
     "license": "Apache-2.0",
     "recipe": "pkgs/by-name/ot/otb/package.nix",
-    "version": "10.0-unstable-2025-12-11",
+    "version": "10.0.0-rc1",
     "versions": {
-      "master": "10.0-unstable-2025-12-11",
+      "master": "10.0.0-rc1",
       "stable": "10.0-unstable-2025-12-11",
       "unstable": "10.0-unstable-2025-12-11"
     }
