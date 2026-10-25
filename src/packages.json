@@ -529,7 +529,7 @@
     "versions": {
       "master": "10.0.0-rc1",
       "stable": "10.0-unstable-2025-12-11",
-      "unstable": "10.0-unstable-2025-12-11"
+      "unstable": "10.0.0-rc1"
     }
   },
   "pdal": {
