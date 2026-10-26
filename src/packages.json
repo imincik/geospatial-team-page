@@ -1318,9 +1318,9 @@
     "homepage": "https://nominatim.org/",
     "license": "GPL-2.0-or-later",
     "recipe": "pkgs/by-name/no/nominatim/nominatim-api.nix",
-    "version": "5.3.2",
+    "version": "5.3.3",
     "versions": {
-      "master": "5.3.2",
+      "master": "5.3.3",
       "stable": "",
       "unstable": "5.3.2"
     }
@@ -1331,9 +1331,9 @@
     "homepage": "https://nominatim.org/",
     "license": "GPL-2.0-or-later",
     "recipe": "pkgs/by-name/no/nominatim/nominatim-api.nix",
-    "version": "5.3.2",
+    "version": "5.3.3",
     "versions": {
-      "master": "5.3.2",
+      "master": "5.3.3",
       "stable": "5.3.2",
       "unstable": "5.3.2"
     }
@@ -1981,9 +1981,9 @@
     "homepage": "https://nominatim.org/",
     "license": "GPL-2.0-or-later",
     "recipe": "pkgs/by-name/no/nominatim/nominatim-api.nix",
-    "version": "5.3.2",
+    "version": "5.3.3",
     "versions": {
-      "master": "5.3.2",
+      "master": "5.3.3",
       "stable": "",
       "unstable": "5.3.2"
     }
@@ -1994,9 +1994,9 @@
     "homepage": "https://nominatim.org/",
     "license": "GPL-2.0-or-later",
     "recipe": "pkgs/by-name/no/nominatim/nominatim-api.nix",
-    "version": "5.3.2",
+    "version": "5.3.3",
     "versions": {
-      "master": "5.3.2",
+      "master": "5.3.3",
       "stable": "5.3.2",
       "unstable": "5.3.2"
     }
