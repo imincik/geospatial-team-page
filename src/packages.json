@@ -1162,9 +1162,9 @@
     "homepage": "https://geodatasets.readthedocs.io/",
     "license": "BSD-3-Clause",
     "recipe": "pkgs/development/python-modules/geodatasets/default.nix",
-    "version": "2026.5.1",
+    "version": "2026.10.0",
     "versions": {
-      "master": "2026.5.1",
+      "master": "2026.10.0",
       "stable": "2026.5.1",
       "unstable": "2026.5.1"
     }
@@ -1825,9 +1825,9 @@
     "homepage": "https://geodatasets.readthedocs.io/",
     "license": "BSD-3-Clause",
     "recipe": "pkgs/development/python-modules/geodatasets/default.nix",
-    "version": "2026.5.1",
+    "version": "2026.10.0",
     "versions": {
-      "master": "2026.5.1",
+      "master": "2026.10.0",
       "stable": "2026.5.1",
       "unstable": "2026.5.1"
     }
