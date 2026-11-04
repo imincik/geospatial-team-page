@@ -393,7 +393,7 @@
     "broken": false,
     "description": "Blazing fast and lightweight PostGIS vector tiles server",
     "homepage": "https://martin.maplibre.org/",
-    "license": "MIT, Apache-2.0",
+    "license": "",
     "recipe": "pkgs/by-name/ma/martin/package.nix",
     "version": "1.16.1",
     "versions": {
