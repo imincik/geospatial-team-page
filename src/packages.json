@@ -1166,7 +1166,7 @@
     "versions": {
       "master": "2026.10.0",
       "stable": "2026.5.1",
-      "unstable": "2026.5.1"
+      "unstable": "2026.10.0"
     }
   },
   "python313Packages.geojson": {
@@ -1270,7 +1270,7 @@
     "versions": {
       "master": "4.15.1",
       "stable": "4.14.1",
-      "unstable": "4.15.0"
+      "unstable": "4.15.1"
     }
   },
   "python313Packages.mapclassify": {
@@ -1829,7 +1829,7 @@
     "versions": {
       "master": "2026.10.0",
       "stable": "2026.5.1",
-      "unstable": "2026.5.1"
+      "unstable": "2026.10.0"
     }
   },
   "python314Packages.geojson": {
@@ -1933,7 +1933,7 @@
     "versions": {
       "master": "4.15.1",
       "stable": "4.14.1",
-      "unstable": "4.15.0"
+      "unstable": "4.15.1"
     }
   },
   "python314Packages.mapclassify": {
