@@ -1056,7 +1056,7 @@
     "broken": false,
     "description": "Process geospatial data to create maps and perform analyses",
     "homepage": "https://scitools.org.uk/cartopy/docs/latest/",
-    "license": "LGPL-3.0-or-later",
+    "license": "BSD-3-Clause",
     "recipe": "pkgs/development/python-modules/cartopy/default.nix",
     "version": "0.26.0",
     "versions": {
@@ -1719,7 +1719,7 @@
     "broken": false,
     "description": "Process geospatial data to create maps and perform analyses",
     "homepage": "https://scitools.org.uk/cartopy/docs/latest/",
-    "license": "LGPL-3.0-or-later",
+    "license": "BSD-3-Clause",
     "recipe": "pkgs/development/python-modules/cartopy/default.nix",
     "version": "0.26.0",
     "versions": {
