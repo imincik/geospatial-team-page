@@ -2369,7 +2369,7 @@
     "broken": false,
     "description": "C Library for reading, writing and updating ESRI Shapefiles",
     "homepage": "http://shapelib.maptools.org/",
-    "license": "GPL-2.0",
+    "license": "MIT, LGPL-2.0-or-later",
     "recipe": "pkgs/by-name/sh/shapelib/package.nix",
     "version": "1.6.3",
     "versions": {
