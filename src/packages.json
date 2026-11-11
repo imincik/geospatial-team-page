@@ -369,9 +369,9 @@
     "homepage": "https://mapproxy.org/",
     "license": "Apache-2.0",
     "recipe": "pkgs/by-name/ma/mapproxy/package.nix",
-    "version": "7.0.0",
+    "version": "8.1.0",
     "versions": {
-      "master": "7.0.0",
+      "master": "8.1.0",
       "stable": "6.0.1",
       "unstable": "7.0.0"
     }
