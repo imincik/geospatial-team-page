@@ -135,9 +135,9 @@
     "homepage": "https://geoserver.org/",
     "license": "GPL-2.0-or-later",
     "recipe": "pkgs/by-name/ge/geoserver/package.nix",
-    "version": "3.0.0",
+    "version": "3.0.2",
     "versions": {
-      "master": "3.0.0",
+      "master": "3.0.2",
       "stable": "2.28.4",
       "unstable": "3.0.0"
     }
