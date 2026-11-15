@@ -139,7 +139,7 @@
     "versions": {
       "master": "3.0.2",
       "stable": "2.28.4",
-      "unstable": "3.0.0"
+      "unstable": "3.0.2"
     }
   },
   "graphhopper": {
@@ -1452,7 +1452,7 @@
     "versions": {
       "master": "2.3.0",
       "stable": "2.2.0",
-      "unstable": "2.2.0"
+      "unstable": "2.3.0"
     }
   },
   "python313Packages.pystac": {
@@ -2115,7 +2115,7 @@
     "versions": {
       "master": "2.3.0",
       "stable": "2.2.0",
-      "unstable": "2.2.0"
+      "unstable": "2.3.0"
     }
   },
   "python314Packages.pystac": {
@@ -2310,7 +2310,7 @@
     "versions": {
       "master": "2.3.0",
       "stable": "2.2.0",
-      "unstable": "2.2.0"
+      "unstable": "2.3.0"
     }
   },
   "shapelib": {
