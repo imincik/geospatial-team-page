@@ -12,6 +12,19 @@
       "unstable": "2.0.5"
     }
   },
+  "bbox": {
+    "broken": false,
+    "description": "Composable spatial services",
+    "homepage": "https://www.bbox.earth/",
+    "license": "Apache-2.0, MIT",
+    "recipe": "pkgs/by-name/bb/bbox/package.nix",
+    "version": "0.6.2",
+    "versions": {
+      "master": "0.6.2",
+      "stable": "",
+      "unstable": ""
+    }
+  },
   "cloudcompare": {
     "broken": false,
     "description": "3D point cloud and mesh processing software",
@@ -2376,19 +2389,6 @@
       "master": "1.28.0",
       "stable": "1.27.1",
       "unstable": "1.28.0"
-    }
-  },
-  "t-rex": {
-    "broken": false,
-    "description": "Vector tile server specialized on publishing MVT tiles",
-    "homepage": "https://t-rex.bbox.earth/",
-    "license": "MIT",
-    "recipe": "pkgs/by-name/t-/t-rex/package.nix",
-    "version": "0.15.0-alpha3",
-    "versions": {
-      "master": "0.15.0-alpha3",
-      "stable": "0.15.0-alpha3",
-      "unstable": "0.15.0-alpha3"
     }
   },
   "tegola": {
