@@ -525,9 +525,9 @@
     "homepage": "https://github.com/ossimlabs/ossim",
     "license": "MIT",
     "recipe": "pkgs/by-name/os/ossim/package.nix",
-    "version": "2.12.0",
+    "version": "2.12.1-unstable-2026-07-24",
     "versions": {
-      "master": "2.12.0",
+      "master": "2.12.1-unstable-2026-07-24",
       "stable": "2.12.0",
       "unstable": "2.12.0"
     }
@@ -2306,9 +2306,9 @@
     "homepage": "https://saga-gis.sourceforge.io",
     "license": "GPL-2.0-or-later",
     "recipe": "pkgs/by-name/sa/saga/package.nix",
-    "version": "9.14.2",
+    "version": "9.14.3",
     "versions": {
-      "master": "9.14.2",
+      "master": "9.14.3",
       "stable": "9.12.3",
       "unstable": "9.14.2"
     }
