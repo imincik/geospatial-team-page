@@ -363,6 +363,19 @@
       "unstable": "1.16.0"
     }
   },
+  "maplibre-native": {
+    "broken": false,
+    "description": "Core library for rendering maps from MapLibre styles",
+    "homepage": "https://maplibre.org/projects/native/",
+    "license": "BSD-2-Clause",
+    "recipe": "pkgs/by-name/ma/maplibre-native/package.nix",
+    "version": "0-unstable-2026-07-13",
+    "versions": {
+      "master": "0-unstable-2026-07-13",
+      "stable": "",
+      "unstable": ""
+    }
+  },
   "mapnik": {
     "broken": false,
     "description": "Open source toolkit for developing mapping applications",
