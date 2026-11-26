@@ -1585,12 +1585,25 @@
       "unstable": "2.2.0"
     }
   },
+  "python313Packages.stac-valid": {
+    "broken": false,
+    "description": "Validator for the SpatioTemporal Asset Catalog (STAC) specification",
+    "homepage": "https://github.com/StacLabs/stac-validator",
+    "license": "Apache-2.0",
+    "recipe": "pkgs/development/python-modules/stac-valid/default.nix",
+    "version": "4.6.1",
+    "versions": {
+      "master": "4.6.1",
+      "stable": "",
+      "unstable": ""
+    }
+  },
   "python313Packages.stac-validator": {
     "broken": false,
     "description": "Validator for the SpatioTemporal Asset Catalog (STAC) specification",
     "homepage": "https://github.com/StacLabs/stac-validator",
     "license": "Apache-2.0",
-    "recipe": "pkgs/development/python-modules/stac-validator/default.nix",
+    "recipe": "pkgs/development/python-modules/stac-valid/default.nix",
     "version": "4.6.1",
     "versions": {
       "master": "4.6.1",
@@ -2248,12 +2261,25 @@
       "unstable": "2.2.0"
     }
   },
+  "python314Packages.stac-valid": {
+    "broken": false,
+    "description": "Validator for the SpatioTemporal Asset Catalog (STAC) specification",
+    "homepage": "https://github.com/StacLabs/stac-validator",
+    "license": "Apache-2.0",
+    "recipe": "pkgs/development/python-modules/stac-valid/default.nix",
+    "version": "4.6.1",
+    "versions": {
+      "master": "4.6.1",
+      "stable": "",
+      "unstable": ""
+    }
+  },
   "python314Packages.stac-validator": {
     "broken": false,
     "description": "Validator for the SpatioTemporal Asset Catalog (STAC) specification",
     "homepage": "https://github.com/StacLabs/stac-validator",
     "license": "Apache-2.0",
-    "recipe": "pkgs/development/python-modules/stac-validator/default.nix",
+    "recipe": "pkgs/development/python-modules/stac-valid/default.nix",
     "version": "4.6.1",
     "versions": {
       "master": "4.6.1",
@@ -2378,12 +2404,25 @@
       "unstable": "5.1.0a"
     }
   },
+  "stac-valid": {
+    "broken": false,
+    "description": "Validator for the SpatioTemporal Asset Catalog (STAC) specification",
+    "homepage": "https://github.com/StacLabs/stac-validator",
+    "license": "Apache-2.0",
+    "recipe": "pkgs/development/python-modules/stac-valid/default.nix",
+    "version": "4.6.1",
+    "versions": {
+      "master": "4.6.1",
+      "stable": "",
+      "unstable": ""
+    }
+  },
   "stac-validator": {
     "broken": false,
     "description": "Validator for the SpatioTemporal Asset Catalog (STAC) specification",
     "homepage": "https://github.com/StacLabs/stac-validator",
     "license": "Apache-2.0",
-    "recipe": "pkgs/development/python-modules/stac-validator/default.nix",
+    "recipe": "pkgs/development/python-modules/stac-valid/default.nix",
     "version": "4.6.1",
     "versions": {
       "master": "4.6.1",
